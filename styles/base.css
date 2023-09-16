@@ -51,6 +51,8 @@ nav{
 }
 nav a{
     color: var(--text_color_primary);
+    font-size: 25px;
+    padding: 15px;
 }
 main {
     padding-top: 1%;
@@ -59,6 +61,22 @@ main {
     background-color: var(--body_background_secondary);
     color: var(--text_color_secondary);
     font-size: 25px;
+}
+h2{
+    background-color: var(--body_background_primary);
+    color: var(--text_color_primary);
+    padding: 10px;
+    border-radius: 50px;
+
+}
+section{
+    display: block;
+    justify-content: center;
+}
+h3{
+    background-color: var(--body_background_tertiary);
+    color: var(--text_color_primary);
+    padding: 15px;
 }
 
 ul{
@@ -73,7 +91,7 @@ footer{
     padding-top: 1%;
     padding-bottom: 1%;
     text-align: center;
-    background-color: var(--body_background_tertiary);
+    background-color: var(--body_background_primary);
     color: var(--text_color_primary);
     font-size: 20px;
 }
