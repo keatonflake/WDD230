@@ -1,0 +1,79 @@
+/* In the base.css file, style the page with your own color schema and typography choices.
+You are responsible to practice good design principles of alignment, color contrast, proximity, repetition, and consistent spacing in all of your work in this class.
+Use the Google Fonts API to select one or two fonts to use on the page.
+The primary element has a limited width and is centered on the screen horizontally.
+Layout the primary column cards using CSS Grid.
+Display the primary sections in a single column at this point.
+Set the style type of the course links list to none (do not display bullets).
+Make additional CSS alterations as needed. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --body_background_primary: #01161E;
+    --body_background_secondary: #FAF8DC;
+    --body_background_tertiary: #124559;
+    --text_color_primary: white;
+    --text_color_secondary: black;
+    --link_color: #DE1A1A;
+    --text_font_family: 'Roboto', 'sans-serif';
+}
+
+body{
+    font-family: var(--text_font_family);
+    color: var(--text_color_primary);
+    background-color: var(--body_background_primary);
+}
+
+header{
+    display: block;
+    background-color: var(--body_background_primary);
+    color: var(--text_color_primary);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 30px;
+}
+.photo{
+    max-width: 20%;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+h1{
+    margin: 0;
+}
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: var(--body_background_tertiary);
+    color: var(--text_color_secondary);
+    font-size: 20px;
+}
+nav a{
+    color: var(--text_color_primary);
+}
+main {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: var(--body_background_secondary);
+    color: var(--text_color_secondary);
+    font-size: 25px;
+}
+
+ul{
+    display: inline-block;
+    text-align: left;
+}
+ul a{
+    color: var(--text_color_secondary);
+}
+
+footer{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    background-color: var(--body_background_tertiary);
+    color: var(--text_color_primary);
+    font-size: 20px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
+    <meta name="author" content="Keaton Flake">
+    <title>Keaton Flake - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+    <!-- header, nav, main, and footer -->
+    <header>
+        <img src="images/keaton_profile_pic.jpeg" class="photo" alt="Keaton Flake profile pic">
+        <h1>Keaton Flake</h1>
+    </header>
+    <nav>
+        <!-- "Home", "Site Plan", "Chamber", "BYU-Idaho", and "Scripture". -->
+        <a href="#">Home</a>
+        <a href="chamber/siteplan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://web.byui.edu/portal/student/" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p48#p48"
+            target="_blank">Scripture</a>
+    </nav>
+    <main>
+        <!-- A h2 tag with the words "WDD 230: Web Frontend Development". -->
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <!--A section tag with the class attribute named "card" that contains the following:
+        An h3 tag containing "Learning Activities" as text.
+        An ul with list items li and anchors a for learning activities that will be populated throughout the the course. -->
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="./lesson01/holygrail.html">Holy Grail Template</a></li>
+            </ul>
+        </section>
+        <!-- A second section with a class name of "card" that contains the following: -->
+        <section class="card">
+            <!-- An h3 tag containing "Information" as text. -->
+            <h3> Information </h3>
+            <p>Weather</p>
+            <p>Page Visits</p>
+        </section>
+    </main>
+    <footer>
+        <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
+        <p>Keaton Flake</p>
+        <p>Arizona</p>
+        <p id="currentyear"></p>
+        <p id="lastmodified"></p>
+    </footer>
+
+    <script src="./scripts/getdates.js"></script>
+</body>
+
+</html>
