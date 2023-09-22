@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-@media screen and (max-width: 650px) {
+@media screen and (min-width: 650px) {
+
 
     :root {
         --body_background_primary: #01161E;
@@ -25,7 +26,7 @@
         padding-top: 1%;
         padding-bottom: 1%;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     a {
@@ -33,7 +34,7 @@
     }
 
     .photo {
-        max-width: 50%;
+        max-width: 20%;
         border-radius: 10px;
         border: 5px solid white;
     }
@@ -45,18 +46,19 @@
     nav {
         padding-top: 1%;
         padding-bottom: 1%;
+        /* text-align: center; */
         background-color: var(--body_background_tertiary);
         color: var(--text_color_secondary);
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     nav a {
         color: var(--text_color_primary);
         font-size: 25px;
         padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     main {
