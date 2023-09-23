@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap');
+
+:root {
+    --body_background_primary: black;
+    --body_background_secondary: #FAF8DC;
+    --body_background_tertiary: #124559;
+    --text_color_primary: white;
+    --text_color_secondary: black;
+    --link_color: #DE1A1A;
+    --text_font_family: 'Montserrat', 'Roboto', 'sans-serif';
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: var(--text_font_family);
+    background-color: var(--body_background_primary);
+    color: var(--body_background_secondary);
+    text-align: center;
+}
+img{
+    max-width: 300px;
+    border-radius: 30px;
+}
+a{
+    text-decoration: underline;
+    color: var(--body_background_secondary);
+}
+h1{
+    background-color: var(--body_background_secondary);
+    color: var(--body_background_primary);
+    padding: 10px;
+}
+p{
+    padding: 10px;
+}

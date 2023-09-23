@@ -1,0 +1,11 @@
+@media screen and (min-width: 651px) and (max-width: 900px) {
+    section {
+        text-align: center;
+        /* justify-content: center; */
+    }
+    .section3 {
+        grid-column: span 3;
+    }
+   
+
+}
