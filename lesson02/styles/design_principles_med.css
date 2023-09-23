@@ -3,6 +3,12 @@
         text-align: center;
         /* justify-content: center; */
     }
+    .section1{
+        text-align: center;
+    }
+    .section2{
+        text-align: center;
+    }
     .section3 {
         grid-column: span 3;
     }
