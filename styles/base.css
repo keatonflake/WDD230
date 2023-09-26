@@ -27,7 +27,59 @@
         text-align: center;
         font-size: 25px;
     }
-
+    /* start of hamburger */
+    #menu{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: #eee;
+        color: #000;
+    }
+    #menu::before {
+        content: "≡";
+    }
+    
+    .navigation {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 760px;
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: black;
+    }
+    nav {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: var(--body_background_tertiary);
+        color: var(--text_color_secondary);
+        font-size: 20px;
+    }
+    .show li {
+        display: block;
+    }
+    
+    #menu.show::before {
+        content: "X";
+    }    
+/* end of hamburger */
     a {
         text-decoration: underline;
     }
@@ -36,27 +88,11 @@
         max-width: 50%;
         border-radius: 10px;
         border: 5px solid white;
+        
     }
 
     h1 {
         margin: 0;
-    }
-
-    nav {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        background-color: var(--body_background_tertiary);
-        color: var(--text_color_secondary);
-        font-size: 20px;
-    }
-
-    nav a {
-        color: var(--text_color_primary);
-        font-size: 25px;
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     main {
@@ -90,6 +126,11 @@
     ul {
         display: inline-block;
         text-align: left;
+        list-style: none;
+        text-align: center;
+    }
+    h3::before{
+        content: "✅";
     }
 
     ul a {

@@ -2,7 +2,6 @@
 
 @media screen and (min-width: 650px) {
 
-
     :root {
         --body_background_primary: #01161E;
         --body_background_secondary: #FAF8DC;
@@ -29,10 +28,6 @@
         font-size: 30px;
     }
 
-    a {
-        text-decoration: underline;
-    }
-
     .photo {
         max-width: 20%;
         border-radius: 10px;
@@ -42,23 +37,23 @@
     h1 {
         margin: 0;
     }
-
-    nav {
-        padding-top: 1%;
-        padding-bottom: 1%;
-        /* text-align: center; */
+    nav{
         background-color: var(--body_background_tertiary);
-        color: var(--text_color_secondary);
-        font-size: 20px;
+    }
+    nav ul{
         display: flex;
+        /* width: 100%; */
+        font-size: 20px;
+        list-style-type: none;
         justify-content: center;
         align-items: center;
     }
-
-    nav a {
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a{
+        text-decoration: underline;
         color: var(--text_color_primary);
-        font-size: 25px;
-        padding: 15px;
     }
 
     main {
@@ -88,14 +83,19 @@
         color: var(--text_color_primary);
         padding: 15px;
     }
-
+  
     ul {
-        display: inline-block;
+        display: flex;
         text-align: left;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     ul a {
         color: var(--text_color_secondary);
+        padding: 10px;
     }
 
     footer {

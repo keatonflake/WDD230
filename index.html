@@ -8,34 +8,40 @@
     <meta name="description" content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
     <meta name="author" content="Keaton Flake">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-<!-- Facebook post formatting -->
-    <meta property="og:url" content="https://keatonflake.github.io/wdd230/" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:title" content="Keaton Flake | wdd230 FrontEnd Development" />
-    <meta property="og:description" content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal" />
-    <meta property="og:image"content="https://keatonflake.github.io/wdd230/images/keaton_profile_pic.jpeg" />
-<!-- Normalize from content delivery system -->
+    <!-- Facebook post formatting -->
+    <meta property="og:url" content="https://keatonflake.github.io/wdd230">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Keaton Flake | wdd230 FrontEnd Development">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
+    <meta property="og:image" content="https://keatonflake.github.io/wdd230/images/keaton_profile_pic.jpeg">
+    <!-- Normalize from content delivery system -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <title>Keaton Flake - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
 </head>
 
 <body>
     <!-- header, nav, main, and footer -->
     <header>
-        <img src="images/keaton_profile_pic.jpeg" class="photo" alt="Keaton Flake profile pic">
+        <img src="images/keaton_profile_pic.jpg" class="photo" alt="Keaton Flake profile pic">
         <h1>Keaton Flake</h1>
     </header>
+    <a id="menu" href="#"></a>
     <nav>
-        <!-- "Home", "Site Plan", "Chamber", "BYU-Idaho", and "Scripture". -->
-        <a href="#">Home</a>
-        <a href="chamber/siteplan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://web.byui.edu/portal/student/" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p48#p48"
-            target="_blank">Scripture</a>
+        <ul class="navigation">
+
+            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a class="active" href="chamber/">Chamber</a></li>
+            <li><a class="active" href="https://web.byui.edu/portal/student/" target="_blank">BYU-Idaho</a></li>
+            <li><a class="active"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p48#p48"
+                    target="_blank">Scripture</a></li>
+        </ul>
+
     </nav>
     <main>
         <!-- A h2 tag with the words "WDD 230: Web Frontend Development". -->
@@ -50,6 +56,7 @@
                 <li><a href="./lesson01/holygrail.html">Holy Grail Template</a></li>
                 <li><a href="./lesson02/design.html">Design Mistakes Lesson</a></li>
                 <li><a href="./lesson02/design-principles.html">Design Principles Prove2</a></li>
+                <li><a href="./images/combinator_exercise.png">combinator exercise</a></li>
             </ul>
         </section>
         <!-- A second section with a class name of "card" that contains the following: -->
@@ -59,16 +66,21 @@
             <p>Weather</p>
             <p>Page Visits</p>
         </section>
-    </main>
-    <footer>
-        <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
-        <p>Keaton Flake</p>
-        <p>Arizona</p>
-        <p id="currentyear"></p>
-        <p id="lastmodified"></p>
-    </footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214391.27462267078!2d-110.19134598624167!3d34.56140276058473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872f3c5a7ae9d803%3A0xb640425546bb2730!2sSnowflake%2C%20AZ%2085937!5e1!3m2!1sen!2sus!4v1695750812424!5m2!1sen!2sus"
+            width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</main>
+<footer>
+    <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
+    <p>Keaton Flake</p>
+    <p>Arizona</p>
+    <p id="currentyear"></p>
+    <p id="lastmodified"></p>
+</footer>
 
-    <script src="./scripts/getdates.js"></script>
+<script src="./scripts/getdates.js"></script>
+<script src="./scripts/hamburger.js"></script>
 </body>
 
 </html>
