@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap');
+
+:root {
+    --body_background_primary: #7388a0;
+    --body_background_secondary: #363457;
+    --body_background_tertiary: #FFFCC2;
+    --text_color_primary: #fefeff;
+    --text_color_secondary: #090302;
+    --button_color: #363457;
+    --text_font_family_primary: 'Roboto', 'sans-serif';
+    --text_font_family_secondary: 'Montserrat', 'sans-serif';
+
+}
+
+body{
+    padding: 2em;
+    font-size: 20px;
+    font-family: var(--text_font_family_primary);
+}
+
+h1{
+    background-color: var(--body_background_primary);
+    color: var(--text_color_primary);
+    border-radius: 10px;
+    padding: 1em;
+}
+h2, h3,  p{
+    color: var(--text_color_secondary);
+    border-radius: 10px;
+}
+p{
+    padding-bottom: 1em;
+}
+.font1{
+    font-family: var(--text_font_family_primary);
+    font-size: 30px;
+}
+.font2{
+    font-family: var(--text_font_family_secondary);
+    font-size: 30px;
+}
+img{
+    max-width: 40%;
+    padding-right: 1em;
+    padding-left: 1em;
+
+}
+.landscape{
+    transform: rotate(-90deg);
+    max-width: 40%;
+    padding-right: 6em;
+}
+.wireframe{
+    text-align: center;
+}
