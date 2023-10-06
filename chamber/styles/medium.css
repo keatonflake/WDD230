@@ -37,15 +37,15 @@
         z-index: 999;
     }
 
-    header h2 {
+    header h1 {
         font-size: 45px;
         margin: 0;
     }
 
-    header h3 {
+    /* header h3 {
         font-size: 30px;
         margin: 0;
-    }
+    } */
 
     nav {
         background-color: var(--body_background_secondary);

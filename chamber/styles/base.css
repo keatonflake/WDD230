@@ -36,16 +36,17 @@
         z-index: 999;
     }
 
-    header h2 {
+    header h1 {
         padding-top: .3em;
         font-size: 25px;
         margin: 0;
+        padding-bottom: 1em;
     }
 
-    header h3 {
+    /* header h3 {
         font-size: 20px;
         margin: 0;
-    }
+    } */
 
     nav {
         position: absolute;
