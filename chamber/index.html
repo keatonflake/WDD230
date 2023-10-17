@@ -21,10 +21,14 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
+    <!-- scripts -->
+    <script src="./scripts/darkmode.js" defer></script>
 </head>
 
 <body>
     <header>
+        <button class="darkmode-button">&#x1F319;</button>
+
         <h1>Snowflake Arizona Chamber of Commerce</h1>
         <nav class="navigation">
         <a id="menu" href="#"></a>
@@ -47,9 +51,8 @@
         </div>
         <section class="section-home event-card">
             <h2>Local Events</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex officia non odio exercitationem.
-                Officiis reprehenderit, ad id qui recusandae, consequatur fuga facilis, impedit pariatur cum magnam
-                dolorem itaque ducimus.</p>
+            <p>Pickleball</p>
+            <img src="./images/pickleball.jpg" alt="pickleball court">
         </section>
         <section class="section-home weather-card">
             <h2>Weather</h2>
@@ -57,11 +60,27 @@
                 Officiis reprehenderit, ad id qui recusandae, consequatur fuga facilis, impedit pariatur cum magnam
                 dolorem itaque ducimus.</p>
         </section>
+        <section class="section-home spotlight-card">
+            <h2>Member Spotlights</h2>
+            <p>Kaylee Scott: Local business owner of Spicy pickles. Kaylee is a proud supporter of our community.</p>
+            <img src="./images/cucumber.jpg" alt="Kaylee's pickle business">
+            <p>Ethan Glenn: CEO of Top G INC. Also a proud supporter of free healthcare.</p>
+            <img src="./images/meeting.jpg" alt="Top G business meeting">
+
+            
+        </section>
     </main>
     <footer>
-        <p>Keaton Flake</p>
-        <p>Chamber Home Page</p>
-        <p>Last Modified</p>
+
+        <h3>Snowflake Arizona Chamber of Commerce</h3>
+        <p>1234 Weast La Avenue</p>
+        <p>Snowflake az 85329</p>
+        <p>info@gmail.com</p>
+        <div>
+            <p>Keaton Flake</p>
+            <p>WDD230 Chamber Home Page</p>
+            <p>Last Modified</p>
+        </div>
     </footer>
 
     <script src="./scripts/hamburger.js"></script>

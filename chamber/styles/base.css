@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&display=swap');
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) { */
     :root {
-        --body_background_primary: rgb(255, 255, 255);
-        --body_background_secondary: #7388a0;
-        --body_background_tertiary: rgba(0, 0, 0);
-        --button_background: black;
+        --light: rgb(255, 255, 255);
+        --dark: rgb(121, 126, 126);
+        --primary: #7388a0;
+        --black: black;
+        --white: white;
 
-        --text_color_primary: white;
-        --text_color_secondary: black;
-        --link_color: #DE1A1A;
         --text_font_family_heading: 'Lobster', 'sans-serif';
         --text_font_family: 'Montserrat', 'sans-serif';
     }
@@ -17,21 +15,20 @@
     body {
         font-family: var(--text_font_family);
         text-align: center;
-        margin: 0;
         width: 100vw;
         height: 100vh;
-        background-color: var(--body_background_primary);
+        background-color: var(--light);
         background-size: cover;
         background-attachment: fixed;
     }
 
     header {
         position: relative;
-        background-color: #7388a0;
-        color: var(--text_color_primary);
+        background-color: var(--primary);
+        color: var(--white);
         font-family: var(--text_font_family_heading);
         text-align: center;
-        position: sticky;
+        /* position: sticky; */
         top: 0;
         z-index: 999;
     }
@@ -60,7 +57,7 @@
         font-weight: 700;
         text-decoration: none;
         background-color: transparent;
-        color: #000;
+        color: var(--black);
         padding: 0;
         margin: 0;
     }
@@ -84,7 +81,7 @@
         padding: 0.75rem;
         text-align: left;
         text-decoration: none;
-        color: white;
+        color: var(--white);
         font-weight: 700;
         transition: 0.5s;
         font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -92,13 +89,13 @@
 
     .navigation a:hover,
     navigation a:active {
-        color: white;
+        color: var(--white);
         background-color: black;
     }
 
     .show li {
         display: block;
-        background-color: #7388a0;
+        background-color: var(--primary);
         width: 100%;
     }
 
@@ -115,8 +112,65 @@
     }
 
     header nav a:hover {
-        background-color: var(--body_background_primary);
-        color: var(--body_background_tertiary);
+        background-color: var(--light);
+        color: var(--dark);
+    }
+
+    /* start of Dark mode Button */
+    .darkmode-button {
+        position: absolute;
+        right: 0;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /* margin-top: 20px; */
+        background: #333;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: var(--text_font_family);
+        border: solid #404C5D 1px;
+        font-size: 20px;
+        -webkit-transition: 500ms;
+        transition: 500ms;
+        border-radius: 5px;
+        background: linear-gradient(145deg, #2e2d2d, #212121);
+        -webkit-box-shadow: -1px -5px 15px #41465B, 
+                     5px  5px 15px #41465B, 
+          inset      5px  5px 10px #212121, 
+          inset     -5px -5px 10px #212121;
+        box-shadow: -1px -5px 15px #41465B, 
+                     5px  5px 15px #41465B, 
+          inset      5px  5px 10px #212121, 
+          inset     -5px -5px 10px #212121;
+      }
+      
+      .darkmode-button:hover {
+        -webkit-box-shadow: 1px 1px 13px #20232e,
+                          -1px -1px 13px #545b78;
+        box-shadow: 1px 1px 13px #20232e,
+                   -1px -1px 13px #545b78;
+        color: #d6d6d6;
+        -webkit-transition: 500ms;
+        transition: 500ms;
+      }
+      
+      .darkmode-button:active {
+        -webkit-box-shadow: 1px 1px 13px #20232e,
+                           -1px -1px 33px #545b78;
+        box-shadow: 1px 1px 13px #20232e,
+                   -1px -1px 33px #545b78;
+        color: #d6d6d6;
+        -webkit-transition: 100ms;
+        transition: 100ms;
+      }
+    /* end of dark mode button */
+    main{
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     .video-hero {
@@ -129,8 +183,8 @@
     }
 
     .button-join {
-        background-color: var(--body_background_secondary);
-        color: var(--text_color_primary);
+        background-color: var(--primary);
+        color: var(--white);
         padding: 8px;
         border-radius: 10px;
         border: none;
@@ -141,22 +195,24 @@
         top: 40%;
     }
     .button-join:hover{
-        background-color: var(--body_background_primary);
-        color: var(--body_background_tertiary);
+        background-color: var(--light);
+        color: var(--black);
     }
     a {
         text-decoration: none;
         list-style: none;
-        color: var(--text_color_primary);
+        color: var(--white);
     }
 
     .section-home {
-        background-color: var(--body_background_tertiary);
-        color: var(--text_color_primary);
-        /* width: 70vw;
-        height: auto;
-        margin: auto; */
+        background-color: var(--dark);
+        color: var(--white);
         border-radius: 10px;
+        padding-bottom: 15px;
+    }
+    .section-home img{
+        max-width: 30vw;
+        border: 10px solid var(--white);
     }
 
     .section-home h2 {
@@ -166,12 +222,19 @@
         padding: 10px;
     }
     footer {
-        display: block;
-        background-color: var(--body_background_secondary);
-        color: white;
+        background-color: var(--primary);
+        color: var(--white);
+        padding-bottom: 5px;
+
         /* bottom: 0; */
     }
-    footer p{
-        padding: 10px;
+    footer h3{
+        padding-top: 5px;
     }
-}
+    footer p{
+        font-size: 11px;
+    }
+    footer div{
+        border-top: 3px solid var(--light);
+    }
+/* } */
