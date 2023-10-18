@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&display=swap');
 
 @media screen and (min-width: 651px) and (max-width: 1000px) {
-
     :root {
         --light: rgb(255, 255, 255);
         --dark: rgb(121, 126, 126);
@@ -16,52 +15,98 @@
     body {
         font-family: var(--text_font_family);
         text-align: center;
-        margin: 0;
         width: 100vw;
         height: 100vh;
         background-color: var(--light);
         background-size: cover;
         background-attachment: fixed;
+        margin: 0;
     }
 
     header {
-        display: block;
+        position: relative;
         background-color: var(--primary);
         color: var(--white);
         font-family: var(--text_font_family_heading);
+        text-align: center;
         top: 0;
-        padding-top: .3em;
-        padding-bottom: .3em;
         z-index: 999;
+        margin: 0;
     }
 
     header h1 {
-        font-size: 45px;
+        padding-top: .3em;
+        font-size: 25px;
         margin: 0;
+        /* padding-bottom: 1em; */
     }
 
-    /* header h3 {
-        font-size: 30px;
+    header h2 {
         margin: 0;
-    } */
+        padding-bottom: .5em;
+    }
 
     nav {
+        position: absolute;
+        top: 0;
         background-color: var(--primary);
-        font-family: var(--text_font_family);
+        text-align: start;
     }
-    nav ul{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-    nav ul li{
+
+    /* test */
+    #menu {
+        display: block;
+        font-size: 4em;
+        font-weight: 700;
         text-decoration: none;
-        list-style-type: none;
-        padding: 10px;
-        font-size: 25px;
-        
+        background-color: transparent;
+        color: var(--black);
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .show li {
+        display: block;
+        background-color: var(--primary);
+        border-radius: 20px;
+        width: 100%;
+        padding-bottom: 2px;
+    }
+
+    .navigation a:hover,
+    navigation a:active {
+        color: var(--white);
+        background-color: black;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: var(--white);
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+
+    .navigation.show {
+        border-radius: 20px;
+        width: 30vw;
+    }
+
+    nav {
+        font-family: var(--text_font_family);
     }
 
     header nav a:hover {
@@ -69,30 +114,61 @@
         color: var(--dark);
     }
 
-    .video-hero {
-        margin-top: 10px;
-        width: 80vw;
+    .darkmode-button {
+        padding: 8px;
+        background-color: var(--black);
+        color: var(--white);
+        border: none;
+        border-radius: 30px;
+        font-family: var(--text_font_family_heading);
+        margin-left: 5px;
+    }
+
+    .darkmode-button:hover {
+        background-color: var(--black);
+
+    }
+
+    main {
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 
     .hero {
-        position: relative;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .hero-img {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        grid-column: 1/ span 3;
+        grid-row: 1 / span 3;
+
     }
 
     .button-join {
+        grid-column: 2/ span 1;
+        grid-row: 2 / span 1;
+        z-index: 999;
         background-color: var(--primary);
         color: var(--white);
-        padding: 15px;
+        padding: 8px;
         border-radius: 10px;
         border: none;
         font-family: var(--text_font_family_heading);
         font-size: 40px;
-        position: absolute;
-        left: 40%;
-        top: 40%;
     }
-    .button-join:hover{
+
+    .button-join:hover {
         background-color: var(--light);
-        color: var(--dark);
+        color: var(--black);
     }
 
     a {
@@ -101,53 +177,79 @@
         color: var(--white);
     }
 
+    .main-home {
+        display: grid;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        grid-gap: 1em;
+        margin-top: 1em;
+
+    }
+
     .section-home {
         background-color: var(--dark);
         color: var(--white);
-        width: 50vw;
-        height: auto;
-        margin: auto;
         border-radius: 10px;
+        padding-bottom: 15px;
+    }
+
+    .section-home img {
+        max-width: 70%;
+        border: 5px solid var(--white);
     }
 
     .section-home h2 {
         padding: 10px;
+        margin: 0;
+        font-family: var(--text_font_family_heading);
+        border-bottom: 2px solid var(--white);
     }
-    .section-home p{
-        padding: 10px;
+
+    .section-home p {
+        margin: 0;
+        padding-top: 5px;
     }
 
-}
-/* footer {
-    background-color: var(--primary);
-    color: var(--white);
-    padding-bottom: 5px;
+    .event-card {
+        grid-column: 1/ span 2;
+    }
 
-   
-}
-footer h3{
-    padding-top: 5px;
-}
-footer p{
-    font-size: 11px;
-}
-footer div{
-    border-top: 3px solid var(--light);
-} */
+    .weather-card {
+        grid-column: 3/ span 1;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-footer {
-    background-color: var(--primary);
-    color: var(--white);
-    padding-bottom: 5px;
+    .spotlight-card {
+        grid-column: 1/ span 3;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 
-    /* bottom: 0; */
-}
-footer h3{
-    padding-top: 5px;
-}
-footer p{
-    font-size: 11px;
-}
-footer div{
-    border-top: 3px solid var(--light);
+    .spotlight-card img {
+        margin-bottom: 10px;
+    }
+
+    .spotlight-card div {
+        border-bottom: 3px solid var(--white);
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        background-color: var(--primary);
+        color: var(--white);
+        padding-bottom: 5px;
+    }
+
+    footer h3 {
+        padding-top: 5px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer div {
+        border-top: 3px solid var(--light);
+    }
 }

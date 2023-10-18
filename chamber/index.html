@@ -26,29 +26,43 @@
 </head>
 
 <body>
-    <header>
-        <button class="darkmode-button">&#x1F319;</button>
 
-        <h1>Snowflake Arizona Chamber of Commerce</h1>
+
+    <header>
+
+        <h1>Snowflake Arizona</h1>
+        <h2>Chamber of Commerce</h2>
+
         <nav class="navigation">
-        <a id="menu" href="#"></a>
+            <button id="menu" href="#">≡</button>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
+                <li><a class="nav-home-button" href="#">Home</a></li>
+                <li><a class="nav-discover-button" href="#">Discover</a></li>
+                <li><a class="nav-directory-button" href="#">Directory</a></li>
+                <li><a class="nav-join-button" href="#">Join</a></li>
+                <li><button class="darkmode-button">Mode &#x1F319;</button></li>
             </ul>
         </nav>
     </header>
+
+    <div class="hero">
+        <!-- <source media="(max-width:650px)" srcset="./images/small_hero.webp"> -->
+        <!-- <img class="hero-img" media="(max-width:1000px)" srcset="./images/medium_hero.webp"> -->
+        <!-- <img class="hero-img" media="(max-width:650px)" srcset="./images/small_hero.webp"> -->
+
+        <!-- <picture> -->
+            <!-- <source media="(min-width:1000px)" srcset="./images/large_hero.webp"> -->
+            <!-- <source media="(max-width:1000px)" srcset="./images/medium_hero.webp"> -->
+            <!-- <source media="(max-width:650px)" srcset="./images/small_hero.webp"> -->
+            <!-- <img src="./images/hero.jpg" alt="landscape photo"> -->
+        <!-- </picture> -->
+            <img class="hero-img" src="./images/hero.jpg" alt="landscape photo">
+
+        <button class="button-join">Join us</button>
+    </div>
+
     <main class="main-home">
-        <div class="hero">
-            <video class="video-hero" muted loop autoplay >
-                <source src="./images/hero-viedo.mp4" type="video/mp4">
-                Your browser does not support this video.
-            </video>
-            <button class="button-join">Join us</button>
-        </div>
         <section class="section-home event-card">
             <h2>Local Events</h2>
             <p>Pickleball</p>
@@ -62,12 +76,16 @@
         </section>
         <section class="section-home spotlight-card">
             <h2>Member Spotlights</h2>
-            <p>Kaylee Scott: Local business owner of Spicy pickles. Kaylee is a proud supporter of our community.</p>
-            <img src="./images/cucumber.jpg" alt="Kaylee's pickle business">
-            <p>Ethan Glenn: CEO of Top G INC. Also a proud supporter of free healthcare.</p>
-            <img src="./images/meeting.jpg" alt="Top G business meeting">
+            <div>
+                <p>Kaylee Scott: Local business owner of Spicy pickles. Kaylee is a proud supporter of our community.
+                </p>
+                <img src="./images/cucumber.jpg" alt="Kaylee's pickle business">
+            </div>
+            <div>
+                <p>Ethan Glenn: CEO of Top G INC. Also a proud supporter of free healthcare.</p>
+                <img src="./images/meeting.jpg" alt="Top G business meeting">
+            </div>
 
-            
         </section>
     </main>
     <footer>

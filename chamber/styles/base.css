@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200&display=swap');
 
-/* @media screen and (max-width: 650px) { */
+@media screen and (max-width: 650px) {
     :root {
         --light: rgb(255, 255, 255);
         --dark: rgb(121, 126, 126);
@@ -20,6 +20,7 @@
         background-color: var(--light);
         background-size: cover;
         background-attachment: fixed;
+        margin: 0;
     }
 
     header {
@@ -28,29 +29,30 @@
         color: var(--white);
         font-family: var(--text_font_family_heading);
         text-align: center;
-        /* position: sticky; */
         top: 0;
         z-index: 999;
+        margin: 0;
     }
 
-    header h1 {
+    header h1{
         padding-top: .3em;
         font-size: 25px;
         margin: 0;
-        padding-bottom: 1em;
+        /* padding-bottom: 1em; */
     }
-
-    /* header h3 {
-        font-size: 20px;
+    header h2{
         margin: 0;
-    } */
+        padding-bottom: .5em;
+    }
 
     nav {
         position: absolute;
         top: 0;
+        background-color: var(--primary);
+        text-align: start;
     }
 
-    /* start of hambuger menu */
+    /* test */
     #menu {
         display: block;
         font-size: 4em;
@@ -60,20 +62,30 @@
         color: var(--black);
         padding: 0;
         margin: 0;
+        border: none;
     }
 
-    #menu::before {
-        content: "≡";
-        margin: 0;
-    }
-
-    .navigation {
-        list-style: none;
-        margin: 0;
-    }
-
-    .navigation li {
+    .navigation li{
         display: none;
+    }
+
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .show li{
+        display: block;
+        background-color: var(--primary);
+        border-radius: 20px;
+        width: 100%;
+        padding-bottom: 2px;
+    }
+
+    .navigation a:hover,
+    navigation a:active {
+        color: var(--white);
+        background-color: black;
     }
 
     .navigation a {
@@ -87,26 +99,11 @@
         font-size: clamp(1rem, 2vmin, 1.5rem);
     }
 
-    .navigation a:hover,
-    navigation a:active {
-        color: var(--white);
-        background-color: black;
+    .navigation.show{
+       border-radius: 20px;
+       width: 30vw;
     }
 
-    .show li {
-        display: block;
-        background-color: var(--primary);
-        width: 100%;
-    }
-
-    #menu.show::before {
-        content: "X";
-        font-size: 30px;
-        font-weight: 700;
-        margin-left: 10px;
-    }
-
-    /* end */
     nav {
         font-family: var(--text_font_family);
     }
@@ -116,73 +113,47 @@
         color: var(--dark);
     }
 
-    /* start of Dark mode Button */
     .darkmode-button {
-        position: absolute;
-        right: 0;
-        padding: 5px;
+        padding: 8px;
+        background-color: var(--black);
+        color: var(--white);
+        border: none;
+        border-radius: 30px;
+        font-family: var(--text_font_family_heading);
         margin-left: 5px;
-        margin-right: 5px;
-        /* margin-top: 20px; */
-        background: #333;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        font-family: var(--text_font_family);
-        border: solid #404C5D 1px;
-        font-size: 20px;
-        -webkit-transition: 500ms;
-        transition: 500ms;
-        border-radius: 5px;
-        background: linear-gradient(145deg, #2e2d2d, #212121);
-        -webkit-box-shadow: -1px -5px 15px #41465B, 
-                     5px  5px 15px #41465B, 
-          inset      5px  5px 10px #212121, 
-          inset     -5px -5px 10px #212121;
-        box-shadow: -1px -5px 15px #41465B, 
-                     5px  5px 15px #41465B, 
-          inset      5px  5px 10px #212121, 
-          inset     -5px -5px 10px #212121;
       }
-      
       .darkmode-button:hover {
-        -webkit-box-shadow: 1px 1px 13px #20232e,
-                          -1px -1px 13px #545b78;
-        box-shadow: 1px 1px 13px #20232e,
-                   -1px -1px 13px #545b78;
-        color: #d6d6d6;
-        -webkit-transition: 500ms;
-        transition: 500ms;
+        background-color: var(--black);
+       
       }
-      
-      .darkmode-button:active {
-        -webkit-box-shadow: 1px 1px 13px #20232e,
-                           -1px -1px 33px #545b78;
-        box-shadow: 1px 1px 13px #20232e,
-                   -1px -1px 33px #545b78;
-        color: #d6d6d6;
-        -webkit-transition: 100ms;
-        transition: 100ms;
-      }
-    /* end of dark mode button */
+    
     main{
         margin-left: 5vw;
         margin-right: 5vw;
     }
 
-    .video-hero {
-        margin-top: 10px;
-        width: 80vw;
-    }
-
     .hero {
-        position: relative;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr,1fr,1fr;
+        grid-template-rows: 1fr,1fr,1fr;
+        align-items: center;
+        justify-items: center;
+      
+    }
+    .hero-img{
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        grid-column: 1/ span 3;
+        grid-row: 1 / span 3;
+
     }
 
     .button-join {
+        grid-column: 2/ span 1;
+        grid-row: 2 / span 1;
+        z-index: 999;
         background-color: var(--primary);
         color: var(--white);
         padding: 8px;
@@ -190,14 +161,13 @@
         border: none;
         font-family: var(--text_font_family_heading);
         font-size: 25px;
-        position: absolute;
-        left: 40%;
-        top: 40%;
-    }
+    } 
+
     .button-join:hover{
         background-color: var(--light);
         color: var(--black);
     }
+
     a {
         text-decoration: none;
         list-style: none;
@@ -211,8 +181,8 @@
         padding-bottom: 15px;
     }
     .section-home img{
-        max-width: 30vw;
-        border: 10px solid var(--white);
+        max-width: 70vw;
+        border: 5px solid var(--white);
     }
 
     .section-home h2 {
@@ -225,8 +195,6 @@
         background-color: var(--primary);
         color: var(--white);
         padding-bottom: 5px;
-
-        /* bottom: 0; */
     }
     footer h3{
         padding-top: 5px;
@@ -237,4 +205,4 @@
     footer div{
         border-top: 3px solid var(--light);
     }
-/* } */
+}
