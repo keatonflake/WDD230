@@ -60,14 +60,35 @@
         color: var(--white);
     }
     .hero-container{
+        display: grid;
         width: 100%;
-        display: block;
-        text-align: center;
-        justify-content: center;
+        /* grid-template-columns: 1fr,1fr,1fr;
+        grid-template-rows: 1fr,1fr,1fr; */
+        /* align-items: center;
+        justify-items: center; */
+      
     }
+    /* .hero-img-container {
+        grid-column: 1/ span 3;
+        grid-row: 1 / span 3;
+    } */
+
     .hero-img{
         width: 100%;
+        height: auto;
     }
+
+    .hero-container .label{
+        position: absolute;
+        /* grid-column: 2/ span 1;
+        grid-row: 2 / span 1; */
+        z-index: 999;
+        background-color: var(--black);
+        color: white;
+        margin-left: 30px;
+        font-size: 50px;
+    }
+
 
     main {
         margin-left: 10vw;
