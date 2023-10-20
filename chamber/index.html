@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./styles/larger.css">
     <!-- scripts -->
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+
 </head>
 
 <body>
@@ -34,7 +36,7 @@
         <h2>Chamber of Commerce</h2>
 
         <nav class="navigation">
-            <button id="menu" href="#">≡</button>
+            <button id="menu">≡</button>
 
             <ul>
                 <li><a class="nav-home-button" href="#">Home</a></li>
@@ -46,21 +48,21 @@
         </nav>
     </header>
 
-    <div class="hero">
-        <!-- <source media="(max-width:650px)" srcset="./images/small_hero.webp"> -->
-        <!-- <img class="hero-img" media="(max-width:1000px)" srcset="./images/medium_hero.webp"> -->
-        <!-- <img class="hero-img" media="(max-width:650px)" srcset="./images/small_hero.webp"> -->
-
-        <!-- <picture> -->
-            <!-- <source media="(min-width:1000px)" srcset="./images/large_hero.webp"> -->
-            <!-- <source media="(max-width:1000px)" srcset="./images/medium_hero.webp"> -->
-            <!-- <source media="(max-width:650px)" srcset="./images/small_hero.webp"> -->
-            <!-- <img src="./images/hero.jpg" alt="landscape photo"> -->
-        <!-- </picture> -->
-            <img class="hero-img" src="./images/hero.jpg" alt="landscape photo">
-
+    <div class="hero-container">
+        <picture>
+            <source class="hero-img" srcset="./images/small-temp-photo.webp" media="(max-width: 650px)">
+            <source class="hero-img" srcset="./images/medium-temp-photo.webp" media="(max-width: 1000px)">
+            <img class="hero-img" src="./images/large-temp-photo.webp" alt="temporary photo">
+           <!-- <button class="button-join">Join us</button> -->
+        </picture>
         <button class="button-join">Join us</button>
     </div>
+    <!-- <picture class="hero">
+        <source class="hero-img" srcset="./images/small-temp-photo.webp" media="(max-width: 650px)">
+        <source class="hero-img" srcset="./images/medium-temp-photo.webp" media="(max-width: 1000px)">
+        <img class="hero-img" src="./images/large-temp-photo.webp" alt="temporary photo">
+        <button class="button-join">Join us</button>
+    </picture> -->
 
     <main class="main-home">
         <section class="section-home event-card">
@@ -68,12 +70,19 @@
             <p>Pickleball</p>
             <img src="./images/pickleball.jpg" alt="pickleball court">
         </section>
+
         <section class="section-home weather-card">
             <h2>Weather</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex officia non odio exercitationem.
-                Officiis reprehenderit, ad id qui recusandae, consequatur fuga facilis, impedit pariatur cum magnam
-                dolorem itaque ducimus.</p>
+            <div>
+                <img id="weathericon" src="images/weathericon.svg" alt="sun image">
+                <h2><span id="temperature">32</span>&deg;F</h2>
+            </div>
+            <h2 id="weatherdesc">Clear</h2>
+            <hr>
+            <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
+            <h3>Wind Chill: <span id="windchill">?</span>&deg;F</h3>
         </section>
+
         <section class="section-home spotlight-card">
             <h2>Member Spotlights</h2>
             <div>

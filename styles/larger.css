@@ -3,42 +3,46 @@
 @media screen and (min-width: 650px) {
 
     :root {
-        --body_background_primary: #01161E;
-        --body_background_secondary: #FAF8DC;
-        --body_background_tertiary: #124559;
-        --text_color_primary: white;
-        --text_color_secondary: black;
-        --link_color: #DE1A1A;
+        --dark: #01161E;
+        --light: rgb(255, 255, 255);
+        --grey: #b5b5af;
+
+        --primary: #124559;
+        --white: white;
+        --black: black;
         --text_font_family: 'Roboto', 'sans-serif';
     }
 
     body {
         font-family: var(--text_font_family);
-        color: var(--text_color_primary);
-        background-color: var(--body_background_primary);
+        color: var(--white);
+        background-color: var(--grey);
     }
 
     header {
-        display: block;
-        background-color: var(--body_background_primary);
-        color: var(--text_color_primary);
+        display: grid;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+        background-color: var(--dark);
+        color: var(--white);
         padding-top: 1%;
         padding-bottom: 1%;
-        text-align: center;
-        font-size: 30px;
+        /* text-align: center; */
+        font-size: 25px;
     }
-
-    .photo {
-        /* max-width: 20%; */
-        border-radius: 10px;
-        border: 5px solid white;
+    .profile-photo{
+        grid-column: 4 /span 1;
+        grid-row: 1 /span 2;
+        width: 150px;
+        border-radius: 20px;
+        left: 0;
     }
-
-    h1 {
-        margin: 0;
+    header h1{
+        grid-column: 2 /span 2;
+        margin-top: 1em;
     }
     nav{
-        background-color: var(--body_background_tertiary);
+        background-color: var(--primary);
     }
     nav ul{
         display: flex;
@@ -53,57 +57,88 @@
     }
     nav ul li a{
         text-decoration: underline;
-        color: var(--text_color_primary);
+        color: var(--white);
+    }
+    .hero-container{
+        width: 100%;
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero-img{
+        width: 100%;
     }
 
     main {
-        padding-top: 1%;
-        padding-bottom: 1%;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: grid;
+        column-gap: 1.5em;
+        grid-template-columns: 1fr,1fr,1fr;
         text-align: center;
-        background-color: var(--body_background_secondary);
-        color: var(--text_color_secondary);
+        background-color: var(--grey);
+        color: var(--black);
         font-size: 25px;
-    }
-
-    h2 {
-        background-color: var(--body_background_primary);
-        color: var(--text_color_primary);
-        padding: 10px;
-        border-radius: 50px;
-
     }
 
     section {
         display: block;
         justify-content: center;
+        border: 2px solid var(--black);
+        border-radius: 10px;
+        margin-top: 1em;
+        color: var(--black);
+        background-color: var(--light);
+    }
+    .title-card {
+        background-color: var(--dark);
+        color: var(--white);
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 25px;
     }
 
     h3 {
-        background-color: var(--body_background_tertiary);
-        color: var(--text_color_primary);
+        background-color: var(--primary);
+        color: var(--white);
         padding: 15px;
     }
-  
-    ul {
-        display: flex;
-        text-align: left;
-        list-style: none;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+    .title-card{
+        grid-column: 1/span 3;
+    }
+    .activities-card{
+        grid-column: 1 /span 2;
     }
 
-    ul a {
-        color: var(--text_color_secondary);
-        padding: 10px;
+    .activities-card p{
+        margin: 0;
+    }
+
+    .activities-card a{
+        color: var(--black);
+        text-decoration: none;
+    }
+    h3::before{
+        content: "✅ ";
+    }
+    .information-card{
+        grid-column: 3/ span 1;
+    }
+    .map-card{
+        grid-column: 1/ span 3;
+    }
+    .map-card iframe{
+        width: 100%;
+        height: 40vh;
     }
 
     footer {
         padding-top: 1%;
         padding-bottom: 1%;
         text-align: center;
-        background-color: var(--body_background_primary);
-        color: var(--text_color_primary);
+        background-color: var(--primary);
+        color: var(--white);
         font-size: 20px;
+        margin-top: 1em;
     }
 }

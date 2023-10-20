@@ -26,10 +26,10 @@
 <body>
     <!-- header, nav, main, and footer -->
     <header>
-        <img src="images/keaton_profile_pic.webp" class="photo" alt="Keaton Flake profile pic" style="width:300px;height:300px;">
+        <a id="menu" href="#"></a>
         <h1>Keaton Flake</h1>
+        <img src="images/keaton_profile_pic.webp" class="profile-photo" alt="Keaton Flake profile pic">
     </header>
-    <a id="menu" href="#"></a>
     <nav>
         <ul class="navigation">
 
@@ -41,36 +41,57 @@
                     href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p48#p48"
                     target="_blank">Scripture</a></li>
         </ul>
-
     </nav>
+
+    <div class="hero-container">
+        <picture>
+            <source srcset="./images/small-payson-utah-temple.webp" media="(max-width: 650px)">
+            <source srcset="./images/medium-payson-utah-temple.webp" media="(max-width: 1000px)">
+            <img class="hero-img" src="./images/new-payson-utah-temple.webp" alt="payson UT temple">
+        </picture>
+    </div>
+
     <main>
         <!-- A h2 tag with the words "WDD 230: Web Frontend Development". -->
+        <section class="card title-card">
         <h2>WDD 230: Web Frontend Development</h2>
+        </section>
 
         <!--A section tag with the class attribute named "card" that contains the following:
         An h3 tag containing "Learning Activities" as text.
         An ul with list items li and anchors a for learning activities that will be populated throughout the the course. -->
-        <section class="card">
+        <section class="card activities-card">
             <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="./lesson01/holygrail.html">Holy Grail Template</a></li>
-                <li><a href="./lesson02/design.html">Design Mistakes Lesson</a></li>
-                <li><a href="./lesson02/design-principles.html">Design Principles Prove2</a></li>
-                <li><a href="./images/combinator_exercise.png">Combinator Exercise</a></li>
-                <li><a href="./lesson05/bom.html">05 Assignment: DOM Manipulation</a></li>
-            </ul>
+            <div>
+                <p><a href="./lesson01/holygrail.html">Holy Grail Template</a></p>
+                <p><a href="./lesson02/design.html">Design Mistakes Lesson</a></p>
+                <p><a href="./lesson02/design-principles.html">Design Principles Prove2</a></p>
+
+                <p><a href="./images/combinator_exercise.png">Combinator Exercise</a></p>
+                <p><a href="./lesson05/bom.html">05 Assignment: DOM Manipulation</a></p>
+            </div>
+           
         </section>
         <!-- A second section with a class name of "card" that contains the following: -->
-        <section class="card">
+        <section class="card information-card">
             <!-- An h3 tag containing "Information" as text. -->
             <h3> Information </h3>
-            <p>Weather</p>
+            <!-- <p>Weather</p> -->
             <p>Page Visits</p>
         </section>
-        <iframe
+
+        <section>
+            <h2>Weather</h2>
+
+        </section>
+        
+        <section class="card map-card">
+            <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214391.27462267078!2d-110.19134598624167!3d34.56140276058473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872f3c5a7ae9d803%3A0xb640425546bb2730!2sSnowflake%2C%20AZ%2085937!5e1!3m2!1sen!2sus!4v1695750812424!5m2!1sen!2sus"
-            width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
 </main>
 <footer>
     <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
