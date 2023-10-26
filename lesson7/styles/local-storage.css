@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	font-family: Roboto, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	width: 760px;
+	background-color: rgba(225, 225, 255, 0.2);
+}
+
+p {
+	margin: 1rem;
+}
+
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
