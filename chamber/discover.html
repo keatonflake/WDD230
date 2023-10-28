@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Chamber of Commerce Website">
+    <meta name="author" content="Keaton Flake">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Facebook post formatting -->
+    <meta property="og:url" content="https://keatonflake.github.io/wdd230/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="wdd230 | Snowflake Chamber of Commerce">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development Keaton Flake Snowflake Chamber of Commerce ">
+    <meta property="og:image" content="https://keatonflake.github.io/wdd230/images/hero-video.mp4">
+    <!-- Normalize from content delivery system -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Keaton Flake - WDD 230 - Snowflake Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/visit-count.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Snowflake Arizona</h1>
+        <h2>Chamber of Commerce</h2>
+
+        <nav class="navigation">
+            <button id="menu">≡</button>
+
+            <ul>
+                <li><a class="nav-home-button" href="./index.html">Home</a></li>
+                <li><a class="nav-discover-button" href="./discover.html">Discover</a></li>
+                <li><a class="nav-directory-button" href="#">Directory</a></li>
+                <li><a class="nav-join-button" href="#">Join</a></li>
+                <li><button class="darkmode-button">Mode &#x1F319;</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-discover">
+        <section class="discover-info-container">
+            <div>
+                <h2 id="message"></h2>
+            </div>
+
+            <div>
+                <h1>Local Parks</h1>
+                <h2>There is a total of 4 public parks located in the town of Snowflake AZ</h2>
+                <ul>
+                    <li>Sunshine Meadows Park</li>
+                    <li>Riverside Oasis Park</li>
+                    <li>Tranquil Grove Gardens</li>
+                    <li>Maplewood Park and Playground</li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h1>Shopping</h1>
+                <h2>there are over 7 local shops!</h2>
+                <ul>
+                    <li>The Green Thumb Emporium</li>
+                    <li>Golden Treasures Boutique</li>
+                    <li>Whimsical Wonders Store</li>
+                    <li>Electric Dreams Electronics</li>
+                    <li>The Cozy Corner Bookstore</li>
+                    <li>Delicious Delights Bakery</li>
+                    <li>Fashion Forward Boutique</li>
+                </ul>
+            </div>
+
+            <div class="discover-info-demographics">
+                <h1>Demographic Statistics of Snowflake</h1>
+                <ul>
+                    <li><strong>Population:</strong> 6,500</li>
+                    <li><strong>Median Age:</strong> 42</li>
+                    <li><strong>Gender Distribution:</strong> 49% male, 51% female</li>
+                    <li><strong>Ethnicity:</strong> 75% White, 15% Hispanic or Latino, 5% African American, 3% Asian, 2%
+                        other</li>
+                    <li><strong>Household Size:</strong> 2.7 persons per household</li>
+                    <li><strong>Education:</strong> 88% high school graduates, 32% bachelors degree or higher</li>
+                    <li><strong>Unemployment Rate:</strong> 4.5%</li>
+                    <li><strong>Median Household Income:</strong> $52,000</li>
+                    <li><strong>Homeownership Rate:</strong> 65%</li>
+                </ul>
+                <h2>Top Occupations:</h2>
+                <ul>
+                    <li>20% service industry</li>
+                    <li>18% healthcare</li>
+                    <li>15% education</li>
+                    <li>12% retail</li>
+                    <li>10% manufacturing</li>
+                    <li>25% other</li>
+                </ul>
+            </div>
+
+            <div class="discover-info-seasons-container">
+            <h1>Seasonal Weather Statistics</h1>
+                <div class="discover-info-season">
+                    <h2>Spring/Summer</h2>
+                    <p><strong>Avg High:</strong> 78°F</p>
+                    <p><strong>Avg Low:</strong> 55°F</p>
+                    <p><strong>Rainfall:</strong> 3.5 inches</p>
+                    <p><strong>Snowfall:</strong> None</p>
+                </div>
+                <div class="discover-info-season">
+                    <h2>Fall/Winter</h2>
+                    <p><strong>Avg High:</strong> 40°F</p>
+                    <p><strong>Avg Low:</strong> 20°F</p>
+                    <p><strong>Rainfall:</strong> 2 inches</p>
+                    <p><strong>Snowfall:</strong> 12 inches</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover-img-gallery">
+            <h1>Image gallery</h1>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/park.webp" loading="lazy" height="300" alt="image of local park">
+                </picture>
+                <h2>Sunshine Meadows Park</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/park2.webp" loading="lazy" height="300" alt="photo of local park">
+                </picture>
+                <h2>Riverside Oasis Park</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/shopping.webp" loading="lazy" height="400" alt="photo of local shop">
+                </picture>
+                <h2>Golden Treasures Boutique</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/swing.webp" loading="lazy" height="300" alt="photo of local shop">
+                </picture>
+                <h2>Maplewood Park and Playground</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/shop.webp" loading="lazy" height="300" alt="photo of local shop">
+                </picture>
+                <h2>Whimsical Wonders Store</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/car.webp" loading="lazy" height="300" alt="photo of car down road">
+                </picture>
+                <h2>Open Country road</h2>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <h3>Snowflake Arizona Chamber of Commerce</h3>
+        <p>1234 Weast La Avenue</p>
+        <p>Snowflake az 85329</p>
+        <p>info@gmail.com</p>
+        <div>
+            <p>Keaton Flake</p>
+            <p>WDD230 Chamber Home Page</p>
+            <p>Last Modified</p>
+        </div>
+    </footer>
+</body>

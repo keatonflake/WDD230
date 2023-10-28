@@ -134,21 +134,22 @@
         margin-right: 5vw;
     }
 
-    .hero-container{
+    .hero-container {
         display: grid;
         width: 100%;
-        grid-template-columns: 1fr,1fr,1fr;
-        grid-template-rows: 1fr,1fr,1fr;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
         align-items: center;
         justify-items: center;
-      
+
     }
+
     .hero-img-container {
         grid-column: 1/ span 3;
         grid-row: 1 / span 3;
     }
 
-    .hero-img{
+    .hero-img {
         width: 100%;
         height: auto;
     }
@@ -220,7 +221,8 @@
         padding-right: 10px;
         width: 25vw;
     }
-    .weather-card img{
+
+    .weather-card img {
         border: none;
         padding: 10px;
     }
@@ -239,6 +241,98 @@
         border-bottom: 3px solid var(--white);
         margin-top: 10px;
         margin-bottom: 15px;
+    }
+
+
+    /* main discover */
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        column-gap: 3vw;
+    }
+
+    .discover-info-container {
+        grid-column: 1/ span 1;
+        margin-top: 10vh;
+    }
+
+    .discover-info-container div {
+        background-color: var(--dark);
+        border-radius: 15px;
+        color: var(--white);
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .discover-info-container div h1 {
+        font-family: var(--text_font_family_heading);
+        padding-bottom: 5px;
+        border-bottom: 3px solid var(--white);
+    }
+
+    .discover-info-container ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .discover-info-container ul li {
+        padding: 5px;
+    }
+
+    .discover-info-demographics h2 {
+        border-bottom: 1px solid white;
+        font-family: var(--text_font_family_heading);
+        padding: 5px;
+    }
+
+    .discover-img-gallery {
+        grid-column: 2/ span1;
+    }
+
+    .discover-img-gallery div {
+        width: 100%;
+    }
+
+    .discover-picture-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
+        /* align-items: center; */
+        justify-items: center;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    .discover-picture {
+        width: 100%;
+    }
+
+    .discover-picture-container h2 {
+        position: absolute;
+        grid-column: 1/ span 1;
+        grid-row: 1 / span 1;
+        background-color: var(--primary);
+        color: var(--white);
+        padding: 5px;
+        border-radius: 5px;
+        font-family: var(--text_font_family_heading);
+    }
+    .discover-picture img{
+        border-radius: 15px;
+        transition: transform .5s;
+    }
+    
+    .discover-picture img:hover{
+        transform: scale(1.05);
+        border-radius: 0px;
+    
     }
 
     footer {
