@@ -153,6 +153,21 @@
         height: 40vh;
     }
 
+    /* join form page */
+    .join-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-benifits{
+        grid-column: 1 /span 1;
+        color: var(--black);
+    }
+
+    .join-form-container{
+        grid-column: 2/ span 1;
+    }
+
     footer {
         padding-top: 1%;
         padding-bottom: 1%;

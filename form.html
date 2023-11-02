@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
+    <meta name="author" content="Keaton Flake">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Facebook post formatting -->
+    <meta property="og:url" content="https://keatonflake.github.io/wdd230">
+    <meta property="og:type" content="profile">
+    <meta property="og required placeholder" content="Keaton Flake | wdd230 FrontEnd Development">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
+    <meta property="og:image" content="https://keatonflake.github.io/wdd230/images/keaton_profile_pic.jpeg">
+    <!-- Normalize from content delivery system -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+     required placeholder>Keaton Flake - WDD 230 - Web Frontend Development< required placeholder>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/page-visits.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <a id="menu" href="#"></a>
+        <h1>Keaton Flake</h1>
+        <img src="images/keaton_profile_pic.webp" class="profile-photo" alt="Keaton Flake profile pic">
+    </header>
+    <nav>
+        <ul class="navigation">
+
+            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="./lesson3/chamber-site-plan.html">Site Plan</a></li>
+            <li><a class="active" href="chamber/index.html">Chamber</a></li>
+            <li><a class="active" href="https://web.byui.edu/portal/student/" target="_blank">BYU-Idaho</a></li>
+            <li><a class="active"
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p48#p48"
+                    target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="form-section">
+          <form id="myForm" action="record.html" method="get">
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]+" required placeholder="Please enter an alphanumeric username">
+            </div>
+        
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" required placeholder="Password must be at least 8 characters and alphanumeric">
+            </div>
+        
+            <div>
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+        
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required placeholder="Please enter a valid email address from byui.edu">
+            </div>
+        
+            <div>
+              <label for="pageRating">Page Rating:</label>
+              <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
+              <span id="ratingDisplay">5</span>
+            </div>
+        
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+        
+    </main>
+    <footer>
+        <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
+        <p>Keaton Flake</p>
+        <p>Arizona</p>
+        <p id="currentyear"></p>
+        <p id="lastmodified"></p>
+    </footer>
+
+</body>
+
+</html>

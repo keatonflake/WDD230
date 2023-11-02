@@ -1,0 +1,55 @@
+:root {
+    --dark: #01161E;
+    --light: rgb(255, 255, 255);
+    --grey: #b5b5af;
+
+    --primary: #124559;
+    --white: white;
+    --black: black;
+    --text_font_family: 'Roboto', 'sans-serif';
+
+    --padding: 5px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-section{
+    max-width: 400px;
+    padding: 10px;
+}
+.form-section form{
+    font-family: var(--text_font_family);
+    
+}
+
+.form-section form div {
+    /* width: 70%; */
+    padding: 5px;
+    text-align: left;
+}
+
+.form-section form div input{
+font-size: 10px;
+}
+
+input[type="text"],
+input[type="password"], 
+input[type="email"]
+ {
+    min-width: 300px;
+    /* max-width: 100%; */
+    padding: 10px;
+}
+
+.form-section form button{
+    background-color: var(--primary);
+    color: var(--white);
+    border-style: none;
+    border-radius: 10px;
+    padding: var(--padding);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--);
+}
