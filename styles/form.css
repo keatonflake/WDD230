@@ -24,23 +24,63 @@ main{
     
 }
 
-.form-section form div {
-    /* width: 70%; */
-    padding: 5px;
-    text-align: left;
+#form-main label{
+    display: block;
+    margin: 1rem 0;
 }
 
-.form-section form div input{
-font-size: 10px;
+#form-main input{
+    display: block;    
 }
 
-input[type="text"],
-input[type="password"], 
-input[type="email"]
- {
-    min-width: 300px;
-    /* max-width: 100%; */
-    padding: 10px;
+#form-main form{
+    margin: 0 auto;    
+    width: 600px;
+}
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 300px;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+#form-main button{
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: red;
+    margin: 1rem 0;
+}
+
+#rating {
+    width: 300px;
+    box-shadow: none;
+}
+
+#rangevalues {
+    display: flex;    
+    width: 320px;
+}
+
+#rangevalues option {
+    flex: 1;
+}
+
+#message{
+    background-color: white;
+    color: red;
+    padding: .5rem;
+    display: block;
+}
+
+input:invalid{
+    box-shadow: 2px 2px 2px red;
+}
+
+input:valid{
+    box-shadow: 2px 2px 2px black;
+}
+
+#form-main h2{
+    text-align: center;
 }
 
 .form-section form button{
