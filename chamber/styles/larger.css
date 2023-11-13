@@ -50,6 +50,7 @@
         background-color: var(--primary);
         font-family: var(--text_font_family);
     }
+
     /* test */
     #menu {
         display: none;
@@ -85,7 +86,8 @@
         border-radius: 20px;
         width: 30vw;
     }
-    .navigation ul{
+
+    .navigation ul {
         margin-bottom: 0;
     }
 
@@ -114,21 +116,22 @@
         margin-right: 5vw;
     }
 
-    .hero-container{
+    .hero-container {
         display: grid;
         width: 100%;
-        grid-template-columns: 1fr,1fr,1fr;
-        grid-template-rows: 1fr,1fr,1fr;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
         align-items: center;
         justify-items: center;
-      
+
     }
+
     .hero-img-container {
         grid-column: 1/ span 3;
         grid-row: 1 / span 3;
     }
 
-    .hero-img{
+    .hero-img {
         width: 100%;
         height: auto;
     }
@@ -200,7 +203,8 @@
         padding-right: 10px;
         width: 25vw;
     }
-    .weather-card img{
+
+    .weather-card img {
         border: none;
         padding: 10px;
     }
@@ -220,71 +224,81 @@
         margin-top: 10px;
         margin-bottom: 15px;
     }
-/* main home end */
 
-/* main discover */
-.main-discover{
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    column-gap: 3vw;
-}
-.discover-info-container{
-    grid-column: 1/ span 1;
-    margin-top: 10vh;
-}
-.discover-info-container div{
-    background-color: var(--dark);
-    border-radius: 15px;
-    color: var(--white);
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    text-align: center;
-    justify-content: center;
-}
-.discover-info-container div h1{
-    font-family: var(--text_font_family_heading);
-    padding-bottom: 5px;
-    border-bottom: 3px solid var(--white);
-}
-.discover-info-container ul{
-    list-style: none;
-    padding: 0;
-}
-.discover-info-container ul li{
-    padding: 5px;
-}
+    /* main home end */
 
-.discover-info-demographics h2{
-    border-bottom: 1px solid white;
-    font-family: var(--text_font_family_heading);
-    padding: 5px;
-}
+    /* main discover */
+    .main-discover {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        column-gap: 3vw;
+    }
 
-.discover-img-gallery{
-    grid-column: 2/ span1;
-}
-.discover-img-gallery div{
-    width: 100%;
-}
-.discover-picture-container{
-    display: grid;
+    .discover-info-container {
+        grid-column: 1/ span 1;
+        margin-top: 10vh;
+    }
+
+    .discover-info-container div {
+        background-color: var(--dark);
+        border-radius: 15px;
+        color: var(--white);
         width: 100%;
-        grid-template-columns: 1fr,1fr,1fr;
-        grid-template-rows: 1fr,1fr,1fr;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .discover-info-container div h1 {
+        font-family: var(--text_font_family_heading);
+        padding-bottom: 5px;
+        border-bottom: 3px solid var(--white);
+    }
+
+    .discover-info-container ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .discover-info-container ul li {
+        padding: 5px;
+    }
+
+    .discover-info-demographics h2 {
+        border-bottom: 1px solid white;
+        font-family: var(--text_font_family_heading);
+        padding: 5px;
+    }
+
+    .discover-img-gallery {
+        grid-column: 2/ span1;
+    }
+
+    .discover-img-gallery div {
+        width: 100%;
+    }
+
+    .discover-picture-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr;
         /* align-items: center; */
         justify-items: center;
         overflow: hidden;
         margin-bottom: 1em;
-}
-.discover-picture{
-    width: 100%;
-}
-.discover-picture-container h2{
-    position: absolute;
+    }
+
+    .discover-picture {
+        width: 100%;
+    }
+
+    .discover-picture-container h2 {
+        position: absolute;
         grid-column: 1/ span 1;
         grid-row: 1/ span 1;
         background-color: var(--primary);
@@ -292,100 +306,110 @@
         padding: 5px;
         border-radius: 5px;
         font-family: var(--text_font_family_heading);
-}
+    }
 
-.discover-picture img{
-    border-radius: 15px;
-    transition: transform .5s;
-}
+    .discover-picture img {
+        border-radius: 15px;
+        transition: transform .5s;
+    }
 
-.discover-picture img:hover{
-    transform: scale(1.05);
-    border-radius: 0px;
+    .discover-picture img:hover {
+        transform: scale(1.05);
+        border-radius: 0px;
 
-}
+    }
 
-/* join form page */
+    /* join form page */
 
-.join-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    margin-top: 3em;
-}
+    .join-form-container{
+        background-color: var(--light);
+    }
+    .join-form-container form{
+        text-align: left;
+        color: var(--black);
+    }
+    .join-membership-info{
+        background-color: var(--dark);
+        color: var(--white);
+    }
+    .join-membership-info ul{
+        margin: 0;
+        list-style: none;
+    }
 
-.join-benifits{
-    grid-column: 1 /span 1;
-    color: var(--black);
-    /* border: 1px solid var(--black); */
-    border-radius: 15px;
-    padding: 5px;
-    font-size: 25px;
-}
-.join-benifits h1{
-    font-family: var(--text_font_family_heading);
-    border-bottom: 1px solid var(--black);
-}
+    .join {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
 
-.join-benifits ul{
-    margin: 0;
-}
+    .join>div {
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px var(--black);
+        border-radius: 5px;
+        width: 90%;
+        min-width: 400px;
+    }
 
-.join-benifits ul li{
-    list-style: none;
-    padding: 10px;
-    margin-bottom: 1em;
-    border-radius: 15px;
-    border: 1px solid var(--white);
-}
-.join-benifits ul li:nth-of-type(1) {
-    background-color: black;
-    color: white;
-}
-.join-benifits ul li:nth-of-type(2) {
-    background-color: #b08d57;
-    color: white;
-}
-.join-benifits ul li:nth-of-type(3) {
-    background-color: grey;
-    color: white;
-}
-.join-benifits ul li:nth-of-type(4) {
-    background-color: gold;
-    color: black;
-}
+    label.myinput {
+        display: block;
+        padding-top: 1rem;
+    }
 
-.join-form-container{
-    grid-column: 2/ span 1;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    border-left: 5px solid var(--dark);
-    color: var(--black);
-    font-size: 25px;
-}
+    label.myinput input,
+    label.myinput textarea {
+        display: block;
+        font-size: 1.2rem;
+        padding: .5rem;
+        width: 20rem;
+        max-width: 20rem;
+    }
 
-.join-form-container form div{
-    padding: 10px;
-    text-align: left;
-}
-.join-form-container form div input{
-    min-width: 300px;
-}
-.join-form-container form div textarea{
-    min-width: 400px;
-}
+    label.myradio {
+        display: block;
+        margin-right: .2rem;
+        font-size: 1.3rem;
+        padding-top: .5rem;
+    }
 
-.join-form-container form button{
-    background-color: var(--primary);
-    color: var(--white);
-    border-style: none;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: var(--);
-}
+    label.myradio input {
+        margin-right: 1rem;
+    }
+
+    .mysubmit {
+        background-color: var(--primary);
+        color: white;
+        margin: 1rem 0 0 0;
+        padding: .5rem;
+        font-size: 1.5rem;
+        border-style: none;
+        border-radius: 15px;
+    }
+
+    label.myinput input:required {
+        border-color: #922;
+    }
+
+    input:valid {
+        background-color: rgb(200, 255, 200);
+    }
+
+    input:invalid {
+        background-color: rgb(255, 200, 200);
+    }
+
+    .join-confirm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    #thankyou-main h2 {
+        text-align: center;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding: 1rem 0;
+    }
 
     footer {
         background-color: var(--primary);
