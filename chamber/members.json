@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Tech Innovations Co.",
+        "address": "123 Innovation Street, Tech City",
+        "phone": "+1 (555) 123-4567",
+        "website": "http://www.techinnovationsco.com",
+        "image": "./images/tech.png",
+        "membershipLevel": "Gold Membership",
+        "otherInfo": "Leading provider of cutting-edge technology solutions."
+      },
+      {
+        "name": "EcoFriendly Solutions Ltd.",
+        "address": "456 Green Avenue, EcoTown",
+        "phone": "+1 (555) 987-6543",
+        "website": "http://www.ecofriendlysolutions.com",
+        "image": "./images/eco.png",
+        "membershipLevel": "Silver Membership",
+        "otherInfo": "Specializing in sustainable and environmentally friendly products."
+      },
+      {
+        "name": "Global Logistics Inc.",
+        "address": "789 Commerce Street, Metro City",
+        "phone": "+1 (555) 321-8765",
+        "website": "http://www.globallogisticsinc.com",
+        "image": "./images/tech.png",
+        "membershipLevel": "Bronze Membership",
+        "otherInfo": "Your reliable partner in global logistics and supply chain management."
+      },
+      {
+        "name": "Culinary Delights Catering",
+        "address": "234 Gourmet Plaza, Foodville",
+        "phone": "+1 (555) 876-5432",
+        "website": "http://www.culinarydelights.com",
+        "image": "./images/food.png",
+        "membershipLevel": "Bronze Membership",
+        "otherInfo": "Creating unforgettable culinary experiences for your events."
+      },
+      {
+        "name": "Creative Designs Studio",
+        "address": "567 Artistic Lane, Design City",
+        "phone": "+1 (555) 234-5678",
+        "website": "http://www.creativedesignsstudio.com",
+        "image": "./images/tech.png",
+        "membershipLevel": "Gold Membership",
+        "otherInfo": "Bringing creativity to life through innovative design solutions."
+      },
+      {
+        "name": "Financial Solutions Group",
+        "address": "890 Finance Square, Moneyville",
+        "phone": "+1 (555) 765-4321",
+        "website": "http://www.financialsolutionsgroup.com",
+        "image": "./images/eco.png",
+        "membershipLevel": "Gold Membership",
+        "otherInfo": "Your trusted partner in financial planning and advisory services."
+      },
+      {
+        "name": "Health and Wellness Hub",
+        "address": "123 Wellness Avenue, Fit City",
+        "phone": "+1 (555) 876-1234",
+        "website": "http://www.healthwellnesshub.com",
+        "image": "./images/food.png",
+        "membershipLevel": "Silver Membership",
+        "otherInfo": "Promoting a healthier and happier community through wellness programs."
+      }
+    ]
+  }
+  

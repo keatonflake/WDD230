@@ -410,6 +410,101 @@
         padding: 1rem 0;
     }
 
+    /* directory */
+    .main-directory{
+        background-color: var(--light);
+        padding: 1em;
+    }
+    
+    /* h1{
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+        color: rgb(49, 49, 170);
+    } */
+
+    .directory-button{
+        font-size: 35px;
+        font-family: var(--text_font_family);
+        background-color: var(--black);
+        color: var(--white);
+        border-radius: 15px;
+        border-style: none;
+        margin-bottom: 1em;
+        margin-right: 1em;
+        padding: 8px;
+    }
+    
+    #cards{
+        color: var(--black);
+    }
+
+    .directory-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        justify-items: center;
+    }
+    
+    .directory-cards section{
+        text-align: center;    
+        border: 2px solid var(--dark);    
+        width: 300px;
+        background-color: var(--menu-bg-color);
+        padding: 1rem;
+        margin: .5rem;
+    }
+    
+    .directory-cards section{
+        box-shadow: .5rem .5rem .5rem var(--hover-background-color);
+    }
+    
+    
+    .directory-cards .gold-member{
+        box-shadow: .5rem .5rem .5rem gold;
+    }
+    
+    .directory-cards .card-button{
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--hover-background-color);
+        padding: .5rem;
+        border-radius: 5px;
+    }
+    
+    /* List View */
+    
+    .directory-list{    
+        display: grid;    
+        justify-items: center;   
+        padding: 1rem;    
+    }
+    
+    .directory-list section img{
+        display: none;
+    }
+    
+    .directory-list section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 70%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .directory-list .card-button{
+        text-decoration: underline;
+        color: var(--black);    
+    }
+    
+    
+    .directory-list section:nth-child(odd) {
+        background-color: var(--background-color);
+    }
+    
+    .directory-list section:nth-child(even) {
+        background-color: var(--hover-background-color)
+    }
+
     footer {
         background-color: var(--primary);
         color: var(--white);
