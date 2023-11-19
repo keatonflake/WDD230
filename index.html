@@ -12,8 +12,7 @@
     <meta property="og:url" content="https://keatonflake.github.io/wdd230">
     <meta property="og:type" content="profile">
     <meta property="og:title" content="Keaton Flake | wdd230 FrontEnd Development">
-    <meta property="og:description"
-        content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development Keaton Flake course assignment portal">
     <meta property="og:image" content="https://keatonflake.github.io/wdd230/images/keaton_profile_pic.jpeg">
     <!-- Normalize from content delivery system -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -22,8 +21,10 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
     <script src="./scripts/getdates.js" defer></script>
-<script src="./scripts/hamburger.js" defer></script>
-<script src="./scripts/page-visits.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/page-visits.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+
 </head>
 
 <body>
@@ -58,7 +59,7 @@
     <main>
         <!-- A h2 tag with the words "WDD 230: Web Frontend Development". -->
         <section class="card title-card">
-        <h2>WDD 230: Web Frontend Development</h2>
+            <h2>WDD 230: Web Frontend Development</h2>
         </section>
 
         <!--A section tag with the class attribute named "card" that contains the following:
@@ -77,31 +78,41 @@
                 <p><a href="./lesson09/prophets.html">WK 09 Prophets Page</a></p>
 
             </div>
-            
+
         </section>
         <!-- A second section with a class name of "card" that contains the following: -->
-        <section class="card information-card">
-            <!-- An h3 tag containing "Information" as text. -->
+        <!-- <section class="card information-card">
             <h3> Information </h3>
             <p>Weather</p>
             <p id="page-visits"></p>
+        </section> -->
+        <section class="section-home weather-card card information-card">
+            <h2>Weather</h2>
+            <div>
+                <img id="weathericon" src="images/weathericon.svg" alt="sun image">
+                <h2><span id="temperature">32</span>&deg;F</h2>
+            </div>
+            <h2 id="weatherdesc">Clear</h2>
+            <hr>
+            <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
+            <p id="page-visits"></p>
         </section>
-        
+
         <section class="card map-card">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214391.27462267078!2d-110.19134598624167!3d34.56140276058473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872f3c5a7ae9d803%3A0xb640425546bb2730!2sSnowflake%2C%20AZ%2085937!5e1!3m2!1sen!2sus!4v1695750812424!5m2!1sen!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214391.27462267078!2d-110.19134598624167!3d34.56140276058473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872f3c5a7ae9d803%3A0xb640425546bb2730!2sSnowflake%2C%20AZ%2085937!5e1!3m2!1sen!2sus!4v1695750812424!5m2!1sen!2sus"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-        
-</main>
-<footer>
-    <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
-    <p>Keaton Flake</p>
-    <p>Arizona</p>
-    <p id="currentyear"></p>
-    <p id="lastmodified"></p>
-</footer>
+
+    </main>
+    <footer>
+        <!-- The copyright symbol and current year where the year will be dynamically populated using JavaScript code. -->
+        <p>Keaton Flake</p>
+        <p>Arizona</p>
+        <p id="currentyear"></p>
+        <p id="lastmodified"></p>
+    </footer>
 
 </body>
 
