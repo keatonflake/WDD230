@@ -25,7 +25,7 @@
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
-    <script src="./scripts/weather.js" defer></script>
+    <script src="./scripts/forecast.js" defer></script>
 
 </head>
 
@@ -66,16 +66,30 @@
             <img src="./images/pickleball.jpg" alt="pickleball court">
         </section>
 
-        <section class="section-home weather-card">
-            <h2>Weather</h2>
-            <div>
-                <img id="weathericon" src="images/weathericon.svg" alt="sun image">
-                <h2><span id="temperature">32</span>&deg;F</h2>
+        <div class="section-home weather-container">
+            <section class="section-home weather-card">
+                <h2>Weather</h2>
+                <div>
+                    <img id="weathericon" src="images/weathericon.svg" alt="sun image">
+                    <h2><span id="temperature">32</span>&deg;F</h2>
+                </div>
+                <h2 id="weatherdesc">Clear</h2>
+                <hr>
+                <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
+                <h3>Wind Chill: <span id="windchill">24</span>°F</h3>
+            </section>
+    
+            <!-- <section class="section-home">
+                <div class="forecast">
+                    <h1>3 Day Temperature Forecast</h1>
+                </div>
+            </section> -->
+        </div>
+
+        <section class="section-home forecast-container">
+            <div class="forecast">
+                <h1>3 Day Temperature Forecast</h1>
             </div>
-            <h2 id="weatherdesc">Clear</h2>
-            <hr>
-            <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
-            <h3>Wind Chill: <span id="windchill">?</span>&deg;F</h3>
         </section>
 
         <section class="section-home spotlight-card">

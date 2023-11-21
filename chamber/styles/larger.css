@@ -197,16 +197,49 @@
         grid-column: 1/ span 2;
     }
 
-    .weather-card {
+    .weather-container{
         grid-column: 3/ span 1;
+    }
+
+    .weather-card {
+        /* grid-column: 1/ span 1; */
         padding-left: 10px;
         padding-right: 10px;
-        width: 25vw;
     }
 
     .weather-card img {
         border: none;
         padding: 10px;
+    }
+
+    .forecast-container{
+        grid-column: 1/ span 3;
+        padding: 10px;
+        margin-left:15vw;
+        margin-right:15vw;
+    }
+
+    .forecast{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forecast h1{
+        padding-top: 10px;
+        word-wrap: break-word;
+        max-width: 80%;
+        text-align: center;
+
+    }
+    .forecast section{
+        display: inline-block;
+        width: 30%;
+    }
+
+    .forecast h2{
+        border-bottom: none;
+
     }
 
     .spotlight-card {
