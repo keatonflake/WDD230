@@ -27,15 +27,11 @@
     <script src="./scripts/windchill.js" defer></script>
     <script src="./scripts/forecast.js" defer></script>
     <script src="./scripts/banner.js" defer></script>
-
-
 </head>
 
 <body>
 
-
     <header>
-
         <h1>Snowflake Arizona</h1>
         <h2>Chamber of Commerce</h2>
 
@@ -52,35 +48,23 @@
         </nav>
     </header>
 
-    <!-- Banner Container -->
-    <div id="banner-container">
-        <div id="banner-content">
-            <p>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
-            <button id="close-banner" onclick="closeBanner()">❌</button>
-        </div>
-    </div>
-
-</body>
-</html>
-
-
     <div class="hero-container">
         <picture class="hero-img-container">
             <source class="hero-img" srcset="./images/small-temp-photo.webp" media="(max-width: 650px)">
             <source class="hero-img" srcset="./images/medium-temp-photo.webp" media="(max-width: 1000px)">
             <img class="hero-img" src="./images/large-temp-photo.webp" alt="temporary photo">
         </picture>
-        <button class="button-join"><a href="./join.html">Join us</a></button>
+        <a class="button-join" href="./join.html">Join us</a>
     </div>
 
     <main class="main-home">
         <section class="section-home event-card">
             <h2>Local Events</h2>
             <p>Pickleball</p>
+            <p>Come join in the latest craze! Courts open Monday-Saturday 5:00am-12:00pm</p>
             <img src="./images/pickleball.jpg" alt="pickleball court">
         </section>
 
-        <div class="section-home weather-container">
             <section class="section-home weather-card">
                 <h2>Weather</h2>
                 <div>
@@ -92,13 +76,6 @@
                 <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
                 <h3>Wind Chill: <span id="windchill">24</span>°F</h3>
             </section>
-    
-            <!-- <section class="section-home">
-                <div class="forecast">
-                    <h1>3 Day Temperature Forecast</h1>
-                </div>
-            </section> -->
-        </div>
 
         <section class="section-home forecast-container">
             <div class="forecast">
@@ -114,7 +91,7 @@
                 <img src="./images/cucumber.jpg" alt="Kaylee's pickle business">
             </div>
             <div>
-                <p>Ethan Glenn: CEO of Top G INC. Also a proud supporter of free healthcare.</p>
+                <p>Ethan Glenn: Local building architect</p>
                 <img src="./images/meeting.jpg" alt="Top G business meeting">
             </div>
 
@@ -132,7 +109,13 @@
             <p>Last Modified</p>
         </div>
     </footer>
-
+    <!-- Banner Container -->
+    <div id="banner-container">
+        <div id="banner-content">
+            <p>Attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+            <button id="close-banner" onclick="closeBanner()">❌</button>
+        </div>
+    </div>
 </body>
 
 </html>

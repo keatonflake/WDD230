@@ -127,6 +127,7 @@
         padding: 15px;
         justify-content: space-between;
         align-items: center;
+        font-size: 25px;
     }
     
     #close-banner {
@@ -188,9 +189,10 @@
 
     .main-home {
         display: grid;
-        grid-template-rows: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 1em;
         margin-top: 1em;
+        font-size: 20px;
 
     }
 
@@ -221,13 +223,15 @@
     .event-card {
         grid-column: 1/ span 2;
     }
-
-    .weather-container{
-        grid-column: 3/ span 1;
+    .event-card p{
+        padding: 5px;
+    }
+    .event-card img{
+        max-width: 50%;
     }
 
     .weather-card {
-        /* grid-column: 1/ span 1; */
+        grid-column: 3/ span 2;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -238,7 +242,7 @@
     }
 
     .forecast-container{
-        grid-column: 1/ span 3;
+        grid-column: 1/ span 4;
         padding: 10px;
         margin-left:15vw;
         margin-right:15vw;
@@ -268,7 +272,7 @@
     }
 
     .spotlight-card {
-        grid-column: 1/ span 3;
+        grid-column: 1/ span 4;
         margin-left: 10vw;
         margin-right: 10vw;
     }
@@ -281,6 +285,10 @@
         border-bottom: 3px solid var(--white);
         margin-top: 10px;
         margin-bottom: 15px;
+    }
+
+    .spotlight-card p{
+        padding: 10px;
     }
 
     /* main home end */
