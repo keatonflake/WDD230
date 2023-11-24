@@ -24,6 +24,7 @@
 
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/visit-count.js" defer></script>
 
 </head>
@@ -80,6 +81,34 @@
                 </ul>
             </div>
 
+            <!-- Add this section after the "Seasonal Weather Statistics" section -->
+<div class="discover-info-schools-container">
+    <h1>Local Schools</h1>
+    <p>Maplewood is home to quality educational institutions. Here are some of the local schools:</p>
+    
+    <div class="discover-info-school">
+        <h2>Maplewood Elementary School</h2>
+        <p><strong>Grade Levels:</strong> K-5</p>
+        <p><strong>Number of Students:</strong> 400</p>
+        <p><strong>Teachers to Students Ratio:</strong> 1:20</p>
+    </div>
+
+    <div class="discover-info-school">
+        <h2>Maplewood Middle School</h2>
+        <p><strong>Grade Levels:</strong> 6-8</p>
+        <p><strong>Number of Students:</strong> 300</p>
+        <p><strong>Teachers to Students Ratio:</strong> 1:18</p>
+    </div>
+
+    <div class="discover-info-school">
+        <h2>Maplewood High School</h2>
+        <p><strong>Grade Levels:</strong> 9-12</p>
+        <p><strong>Number of Students:</strong> 500</p>
+        <p><strong>Teachers to Students Ratio:</strong> 1:15</p>
+    </div>
+</div>
+
+
             <div class="discover-info-demographics">
                 <h1>Demographic Statistics of Snowflake</h1>
                 <ul>
@@ -104,6 +133,52 @@
                     <li>25% other</li>
                 </ul>
             </div>
+
+            <div class="income-distribution-container">
+                <h1>Income Distribution</h1>
+                
+                <div class="income-range">
+                    <h2>Less than $25,000</h2>
+                    <h3>1,200</h3>
+                </div>
+                
+                <div class="income-range">
+                    <h2>$25,000 - $49,999</h2>
+                    <h3>2,500</h3>
+                </div>
+                
+                <div class="income-range">
+                    <h2>$50,000 - $74,999</h2>
+                    <h3>1,800</h3>
+                </div>
+                
+                <div class="income-range">
+                    <h2>$75,000 - $99,999</h2>
+                    <h3>800</h3>
+                </div>
+                
+                <div class="income-range">
+                    <h2>$100,000 - $149,999</h2>
+                    <h3>700</h3>
+                </div>
+                
+                <div class="income-range">
+                    <h2>$150,000 or more</h2>
+                    <h3>400</h3>
+                </div>
+                
+                <h1>Poverty Status</h1>
+                
+                <div class="poverty-status">
+                    <h2>Individuals below the poverty line</h2>
+                    <h3>800</h3>
+                </div>
+                
+                <div class="poverty-status">
+                    <h2>Families below the poverty line</h2>
+                    <h3>300</h3>
+                </div>
+            </div>            
 
             <div class="discover-info-seasons-container">
             <h1>Seasonal Weather Statistics</h1>
@@ -160,7 +235,31 @@
                 <picture class="discover-picture">
                     <img src="./images/car.webp" loading="lazy" height="300" alt="photo of car down road">
                 </picture>
-                <h2>Open Country road</h2>
+                <h2>Open Country Road</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/desert1.webp" loading="lazy" width="500" alt="photo of sandy Desert Views">
+                </picture>
+                <h2>Desert Views</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/desert2.webp" loading="lazy" width="500" alt="photo of Local Sandy Landscape">
+                </picture>
+                <h2>Local Landscape</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/desert3.webp" loading="lazy" width="500" alt="photo of Beautiful Sand">
+                </picture>
+                <h2>Beautiful Sand</h2>
+            </div>
+            <div class="discover-picture-container">
+                <picture class="discover-picture">
+                    <img src="./images/desert4.webp" loading="lazy" width="500" alt="photo of Hiking Area">
+                </picture>
+                <h2>Hiking Area</h2>
             </div>
         </section>
 
@@ -174,7 +273,8 @@
         <div>
             <p>Keaton Flake</p>
             <p>WDD230 Chamber Home Page</p>
-            <p>Last Modified</p>
+            <p id="currentyear"> </p>
+            <p id="lastmodified">Last Modified</p>
         </div>
     </footer>
 </body>

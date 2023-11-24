@@ -24,7 +24,7 @@
     <!-- scripts -->
     <script src="./scripts/hamburger.js" defer></script>
     <script src="./scripts/darkmode.js" defer></script>
-    <!-- <script src="./scripts/windchill.js" defer></script> -->
+    <script src="./scripts/getdates.js" defer></script>
 
 </head>
 
@@ -47,60 +47,62 @@
         </nav>
     </header>
 
-        <main id="join-main">
-            <section class="join">
-                <div class="join-form-container">
-                    <form method="GET" action="thankyou.html">
-                        <label class="myinput">First Name*<input id="fname" type="text" name="fname" required></label>
-                        <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required></label>
-                        <label class="myinput">Title<input type="text" name="title" id="title" pattern="[A-Za-z\s\-]{7,}"></label>
-                        <label class="myinput">Email*<input type="email" name="email" required placeholder="example@mymail.com"></label>
-                        <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
-                        <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
-                        <h3>Membership Level</h3>
-                        <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
-                        <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
-                        <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
-                        <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
-                        <label class="myinput">Business Description<textarea name="description" cols="40"
-                                rows="5"></textarea></label>
-                        <input id="timestamp" type="hidden" name="timestamp" value="">
-                        <button class="mysubmit">Join the Chamber!</button>
-                    </form>
-                </div>
-                <div class="join-membership-info">
-                    <h2>Membership Levels Benefits</h2>
-                    <h3>NP Membership</h3>
-                    <ul>
-                        <li>For non profit organizations and there is no fee</li>
-                    </ul>
-                    <h3>Bronze Membership</h3>
-                    <ul>
-                        <li>15% discount on events</li>
-                        <li>10% discount on advertising</li>
-                        <li>Fee of $50/month</li>
-                    </ul>
-    
-                    <h3>Silver Membership</h3>
-                    <ul>
-                        <li>25% discount on events</li>
-                        <li>15% discount on advertising</li>
-                        <li>Free participation in the trade fair</li>
-                        <li>Fee of $100/month</li>
-                    </ul>
-    
-                    <h3>Gold Membership</h3>
-                    <ul>
-                        <li>50% discount on events</li>
-                        <li>50% discount on advertising</li>
-                        <li>Free participation in the trade fair</li>
-                        <li>5 free featured ads per year</li>
-                        <li>1 free training per quarter</li>
-                        <li>Fee of $250/month</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+    <main id="join-main">
+        <section class="join">
+            <div class="join-form-container">
+                <form method="GET" action="thankyou.html">
+                    <label class="myinput">First Name*<input id="fname" type="text" name="fname" required></label>
+                    <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label class="myinput">Title<input type="text" name="title" id="title"
+                            pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label class="myinput">Email*<input type="email" name="email" required
+                            placeholder="example@mymail.com"></label>
+                    <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
+                    <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+                    <h3>Membership Level</h3>
+                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
+                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
+                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
+                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
+                    <label class="myinput">Business Description<textarea name="description" cols="40"
+                            rows="5"></textarea></label>
+                    <input id="timestamp" type="hidden" name="timestamp" value="">
+                    <button class="mysubmit">Join the Chamber!</button>
+                </form>
+            </div>
+            <div class="join-membership-info">
+                <h2>Membership Levels Benefits</h2>
+                <h3>NP Membership</h3>
+                <ul>
+                    <li>For non profit organizations and there is no fee</li>
+                </ul>
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250/month</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
 
@@ -111,7 +113,8 @@
         <div>
             <p>Keaton Flake</p>
             <p>WDD230 Chamber Home Page</p>
-            <p>Last Modified</p>
+            <p id="currentyear"> </p>
+            <p id="lastmodified">Last Modified</p>
         </div>
     </footer>
 </body>
