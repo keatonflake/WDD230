@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for Organic Food Company Home Page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organic Food Company - Providing Fresh and Healthy Organic Products">
+    <meta name="keywords" content="organic, food, farm-to-table, fresh, healthy, sustainable">
+    <meta name="author" content="Bountiful Foods">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Organic Food Company">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Providing Fresh and Healthy Organic Products">
+    <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
+    <meta property="og:url" content="https://www.yourorganicfoodcompany.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Stylesheet Links-->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+    <!-- scripts -->
+    <script src="./scripts/hamburgerMenu.js" defer></script>
+    <script src="./scripts/weatherForecast.js" defer></script>
+    <script src="./scripts/lastModified.js" defer></script>
+
+
+    <!-- Title of the Document -->
+    <title>Bountiful Foods</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- Navigation Bar -->
+        <nav class="navigation">
+            <button id="menu">≡</button>
+            <ul>
+                <li><a id="nav-home-button" href="./index.html">Home</a></li>
+                <li><a id="nav-order-button" href="./order.html">Order</a></li>
+                <li><a id="nav-about-button" href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <img src="./images/logo_cream-black.png" loading="lazy" height="80" alt="Bountiful Foods Logo image">
+
+        <h1>Bountiful Foods</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture class="hero-img-container">
+                <source class="hero-img" srcset="./images/smoothies_small.webp" media="(max-width: 650px)">
+                <source class="hero-img" srcset="./images/smoothies-med.webp" media="(max-width: 1000px)">
+                <img class="hero-img" src="./images/smoothies-large.webp" alt="Image of Four Specialty Smoothies">
+            </picture>
+            <a class="order-button" href="./order.html">Lets Customize!</a>
+        </div>
+
+        <section class="summary">
+            <h1>Coastal Locations</h2>
+                <div>
+                    <p>Headquartered in Carlsbad, California- Bountiful Foods extends from Los Angeles to San Diego
+                        through
+                        a fleet of food trucks.</p>
+
+                    <p>We source fresh fruits and produce directly from local farmers. </p>
+
+                    <p>Experience the essence of healthy eating, the bounty of organic goodness, and the convenience of
+                        Bountiful Foods as we strive to make a positive impact on your health and happiness.</p>
+                </div>
+
+        </section>
+
+        <section class="weather">
+            <h1>Current Weather</h1>
+            <p id="weather-current-temp">Current temperature</p>
+            <p id="weather-condition-description">Condition description</p>
+            <img id="weather-icon" src="" alt="icon image of current weather">
+            <p id="weather-current-humidity">Current humidity</p>
+        </section>
+
+        <section class="forecast-container">
+            <h1>3 Day temperature Forecast</h1>
+
+            <div class="forecast">
+                <!-- <h1>3 Day temperature Forecast</h1> -->
+            </div>
+        </section>
+</main>
+
+<!-- <section>
+    <p></p>
+</section> -->
+
+<footer>
+
+    <div class="social-media-links">
+        <a href="https://www.instagram.com/">
+            <img src="./images/instagram.png" loading="lazy" alt="instagram logo">
+        </a>
+        <a href="https://www.facebook.com/">
+            <img src="./images/facebook.png" loading="lazy" alt="facebook logo">
+        </a>
+        <a href="https://www.twitter.com/">
+            <img src="./images/twitter.png" loading="lazy" alt="twitter logo">
+        </a>
+    </div>
+
+    <div class="contact-info">
+        <h2>Contact Information:</h2>
+        <p>Email: contact@BountifulFoods.com</p>
+        <p>Phone: +1 123-456-7890</p>
+        <p>Street Address: 123 Main Street, City, Country</p>
+    </div>
+
+    <div class="last-modified">
+        <p>Last Modified: </p>
+        <span id="lastModified"></span>
+    </div>
+
+    <a href="./resource.html" class="resources">Resources and Attributions (link)</a>
+
+</footer>
+</body>
+
+</html>
