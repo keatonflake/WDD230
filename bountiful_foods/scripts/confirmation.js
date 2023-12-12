@@ -15,16 +15,13 @@ let instructions = params.get("specialInstructions");
 
 document.querySelector('#confirmationName').textContent = "Thank you for your order " + firstName + "!";
 
-document.querySelector('#confirmationFruits').textContent = fruit1 + ", " + fruit2 + ", "+ fruit3 + ", ";
-// document.querySelector('#confirmationFruit2').textContent = "Fruit #2: " + fruit2;
-// document.querySelector('#confirmationFruit3').textContent = "Fruit #3: " + fruit3;
+document.querySelector('#confirmationFruits').textContent = "Fruits: " + fruit1 + ", " + fruit2 + ", "+ fruit3 + ", ";
 
 
+document.querySelector('#confirmationDetailsName').textContent = firstName;
 document.querySelector('#confirmationEmail').textContent = "Email: " + email;
 document.querySelector('#confirmationPhone').textContent = "Phone Number: " + phoneNumber;
 document.querySelector('#confirmationInstructions').textContent = "Instructions: " + instructions;
-
-
 
 function loadFruitData() {
     var xhr = new XMLHttpRequest();
