@@ -1,10 +1,6 @@
 let url = new URL(window.location);
 let params  = url.searchParams;
 
-// Remove this when you are done inspecting parameters in the console
-for (const p of params) {
-    console.log(p);
-}//get submitted info
 let firstName = params.get("firstName");
 let email = params.get("email");
 let phoneNumber = params.get("phoneNumber");

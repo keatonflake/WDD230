@@ -1,4 +1,3 @@
-    // Function to load fruit options from fruits.json
     function loadFruitOptions() {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function() {

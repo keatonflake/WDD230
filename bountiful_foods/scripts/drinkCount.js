@@ -5,9 +5,5 @@ document.getElementById('submit-order').addEventListener('click', function() {
     // Increment the value
     currentOrderCount++;
 
-    // Update the value in local storage
     localStorage.setItem('orderCount', currentOrderCount);
-
-    // You can use the value in your application as needed
-    console.log('Orders placed: ' + currentOrderCount);
 });
