@@ -27,7 +27,6 @@
 
     section h1 {
         font-family: var(--display);
-        /* text-decoration: underline; */
         color: var(--white);
         padding: 5px;
         border-radius: 15px;
@@ -40,7 +39,7 @@
         list-style: none;
     }
 
-     /* specific */
+    /* specific */
     body {
         background-color: var(--blue);
     }
@@ -100,7 +99,7 @@
         border-radius: 10px;
     }
 
-    .navigation ul li a{
+    .navigation ul li a {
         color: var(--black);
         font-family: var(--text);
         border: 2px solid var(--black);
@@ -171,17 +170,17 @@
         color: black;
     }
 
-    .specialty-drinks-home{
+    .specialty-drinks-home {
         color: var(--black);
     }
 
-    #specialty-heading{
-       color: var(--black);
-       border-bottom: 1px solid var(--black);
-       border-radius: 0;
+    #specialty-heading {
+        color: var(--black);
+        border-bottom: 1px solid var(--black);
+        border-radius: 0;
     }
 
-    .specialty-drink-background{
+    .specialty-drink-background {
         background-image: url('../images/oranges-banner.webp');
         background-size: cover;
         background-position: center;
@@ -189,7 +188,7 @@
         margin: 0 auto;
     }
 
-    .specialty-drinks-container{
+    .specialty-drinks-container {
         background-color: rgba(255, 255, 255, 0.842);
         border-radius: 10px;
         padding-bottom: 10px;
@@ -219,7 +218,6 @@
         margin-top: 1em;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* background-color: var(--aqua); */
     }
 
     .weather h1 {
@@ -265,7 +263,6 @@
         display: grid;
         max-width: 300px;
         grid-template-columns: 1fr 1fr;
-        /* background-color: var(--aqua); */
         border: 5px solid var(--cream);
         border-radius: 15px;
         padding: 10px;
@@ -290,18 +287,18 @@
         border-radius: 15px;
     }
 
-     /* order form */
+    /* order form */
 
-     .order-body{
+    .order-body {
         margin: 0;
     }
 
-     .order-page-main{
+    .order-page-main {
         display: grid;
         margin-bottom: 1em;
     }
 
-    .custom-text{
+    .custom-text {
         font-family: var(--display);
         color: var(--cream);
         border-radius: 10px;
@@ -310,12 +307,14 @@
         justify-content: center;
         margin: 0 auto;
     }
-    .custom-text h1{
+
+    .custom-text h1 {
         font-size: 3rem;
         margin-top: 1vh;
         margin-bottom: 0;
     }
-    .custom-text h2{
+
+    .custom-text h2 {
         font-size: 4em;
         margin-top: 0;
         margin-bottom: 1vh;
@@ -345,38 +344,38 @@
         color: var(--black);
     }
 
-    #orderForm input{
+    #orderForm input {
         border-radius: 15px;
         border: 1px solid black;
         margin-bottom: 15px;
     }
 
-    #selectOption1{
+    #selectOption1 {
         font-family: var(--text);
         border: 1px solid black;
         border-radius: 10px;
         margin-bottom: 1em;
     }
 
-    #selectOption2{
+    #selectOption2 {
         font-family: var(--text);
         border: 1px solid black;
         border-radius: 10px;
         margin-bottom: 1em;
     }
 
-    #selectOption3{
+    #selectOption3 {
         font-family: var(--text);
         border: 1px solid black;
         border-radius: 10px;
         margin-bottom: 1em;
     }
 
-    #specialInstructions{
+    #specialInstructions {
         max-width: 300px;
     }
 
-    #submit-order{
+    #submit-order {
         font-family: var(--display);
         background-color: var(--orange);
         border: 1px solid var(--black);
@@ -386,32 +385,32 @@
         width: 100%;
     }
 
-     /* confirmation */
+    /* confirmation */
 
-     .confirmation-main{
+    .confirmation-main {
         width: 80%;
         margin: 0 auto;
         text-align: center;
         font-family: var(--text);
     }
 
-    #confirmationName{
+    #confirmationName {
         font-family: var(--display);
         color: var(--cream);
         border-bottom: 1px solid var(--white);
     }
 
-    .confirmation-info{
+    .confirmation-info {
         color: var(--white);
     }
 
-    #details-heading{
+    #details-heading {
         background-color: var(--orange);
         padding: 10px;
         border-radius: 15px;
     }
 
-    .confirmation-details{
+    .confirmation-details {
         background-color: rgba(255, 255, 255, 0.937);
         padding: 10px;
         border-top: 2px dotted var(--black);
@@ -422,12 +421,12 @@
         margin-bottom: 1em;
     }
 
-    .confirmation-details h3{
+    .confirmation-details h3 {
         border-top: 2px solid var(--black);
         border-bottom: 2px solid var(--black);
     }
 
-    .about-main{
+    .about-main {
         display: block;
         justify-content: center;
         align-items: center;
@@ -439,7 +438,7 @@
 
     }
 
-    .about-main section h2{
+    .about-main section h2 {
         font-family: var(--display);
         background-color: var(--orange);
         color: var(--black);
@@ -447,45 +446,45 @@
 
     }
 
-    .about-main .california-water{
+    .about-main .california-water {
         width: 100%;
         border-radius: 15px;
         margin-bottom: 1em;
     }
 
-    .california-water-img{
+    .california-water-img {
         max-width: 60%;
     }
 
-    .about-main .california-street{
+    .about-main .california-street {
         width: 100%;
         border-radius: 15px;
         margin-bottom: 1em;
     }
 
-    .california-street-img{
+    .california-street-img {
         max-width: 60%;
     }
 
-    .about-map{
+    .about-map {
         margin-top: 1em;
         margin-bottom: 2em;
         width: 80%;
     }
 
-    .about-section4{
+    .about-section4 {
         width: 70%;
         margin: 0 auto;
     }
 
-    .about-section4 h2{
+    .about-section4 h2 {
         font-family: var(--display);
         background-color: var(--orange);
         color: var(--black);
         padding: 5px;
     }
 
-    .resource-main{
+    .resource-main {
         text-align: center;
         background-color: var(--white);
         max-width: 80%;
@@ -493,20 +492,21 @@
         margin: 0 auto;
     }
 
-    .resource-links{
+    .resource-links {
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.858);
         height: 70vh;
         max-width: 60%;
         margin: 0 auto;
     }
-    .resource-links a{
+
+    .resource-links a {
         padding: 15px;
         font-family: var(--text);
         color: var(--black);
     }
 
-    .resource-links h1{
+    .resource-links h1 {
         font-family: var(--display);
     }
 
@@ -529,7 +529,7 @@
         display: block;
     }
 
-    .social-media-links img{
+    .social-media-links img {
         width: 60px;
         padding: 10px;
     }

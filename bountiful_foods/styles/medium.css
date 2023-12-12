@@ -27,7 +27,6 @@
 
     section h1 {
         font-family: var(--display);
-        /* text-decoration: underline; */
         color: var(--white);
         padding: 5px;
         border-radius: 15px;
@@ -127,10 +126,6 @@
         text-align: center;
     }
 
-    /* #nav-about-button a{
-        
-    } */
-
     main {
         margin-left: 10vw;
         margin-right: 10vw;
@@ -174,17 +169,17 @@
         color: black;
     }
 
-    .specialty-drinks-home{
+    .specialty-drinks-home {
         color: var(--black);
     }
 
-    #specialty-heading{
-       color: var(--black);
-       border-bottom: 1px solid var(--black);
-       border-radius: 0;
+    #specialty-heading {
+        color: var(--black);
+        border-bottom: 1px solid var(--black);
+        border-radius: 0;
     }
 
-    .specialty-drink-background{
+    .specialty-drink-background {
         background-image: url('../images/oranges-banner.webp');
         background-size: cover;
         background-position: center;
@@ -192,7 +187,7 @@
         margin: 0 auto;
     }
 
-    .specialty-drinks-container{
+    .specialty-drinks-container {
         background-color: rgba(255, 255, 255, 0.842);
         border-radius: 10px;
         padding-bottom: 10px;
@@ -250,11 +245,10 @@
         width: 100%;
     }
 
-    /* .forecast div {
-        display: block;
-        font-size: 20px;
-        max-width: 150px;
-    } */
+    .forecast-container {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
 
     .forecast div {
         display: grid;
@@ -421,7 +415,7 @@
     }
 
 
-    .about-main{
+    .about-main {
         display: block;
         justify-content: center;
         align-items: center;
@@ -433,7 +427,7 @@
 
     }
 
-    .about-main section h2{
+    .about-main section h2 {
         font-family: var(--display);
         background-color: var(--orange);
         color: var(--black);
@@ -441,45 +435,45 @@
 
     }
 
-    .about-main .california-water{
+    .about-main .california-water {
         width: 100%;
         border-radius: 15px;
         margin-bottom: 1em;
     }
 
-    .california-water-img{
+    .california-water-img {
         max-width: 60%;
     }
 
-    .about-main .california-street{
+    .about-main .california-street {
         width: 100%;
         border-radius: 15px;
         margin-bottom: 1em;
     }
 
-    .california-street-img{
+    .california-street-img {
         max-width: 60%;
     }
 
-    .about-map{
+    .about-map {
         margin-top: 1em;
         margin-bottom: 2em;
         width: 80%;
     }
 
-    .about-section4{
+    .about-section4 {
         width: 70%;
         margin: 0 auto;
     }
 
-    .about-section4 h2{
+    .about-section4 h2 {
         font-family: var(--display);
         background-color: var(--orange);
         color: var(--black);
         padding: 5px;
     }
 
-    .resource-main{
+    .resource-main {
         text-align: center;
         background-color: var(--white);
         max-width: 80%;
@@ -487,20 +481,21 @@
         margin: 0 auto;
     }
 
-    .resource-links{
+    .resource-links {
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.858);
         height: 70vh;
         max-width: 60%;
         margin: 0 auto;
     }
-    .resource-links a{
+
+    .resource-links a {
         padding: 15px;
         font-family: var(--text);
         color: var(--black);
     }
 
-    .resource-links h1{
+    .resource-links h1 {
         font-family: var(--display);
     }
 
