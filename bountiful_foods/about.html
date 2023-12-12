@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for Organic Food Company Home Page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organic Food Company - Providing Fresh and Healthy Organic Products">
+    <meta name="keywords" content="organic, food, farm-to-table, fresh, healthy, sustainable">
+    <meta name="author" content="Bountiful Foods">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Organic Food Company">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Providing Fresh and Healthy Organic Products">
+    <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
+    <meta property="og:url" content="https://www.yourorganicfoodcompany.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Stylesheet Links-->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+    <!-- scripts -->
+    <script src="./scripts/hamburgerMenu.js" defer></script>
+    <!-- <script src="./scripts/weatherForecast.js" defer></script> -->
+    <script src="./scripts/lastModified.js" defer></script>
+
+
+    <!-- Title of the Document -->
+    <title>Bountiful Foods</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- Navigation Bar -->
+        <nav class="navigation">
+            <button id="menu">≡</button>
+            <ul>
+                <li><a id="nav-home-button" href="./index.html">Home</a></li>
+                <li><a id="nav-order-button" href="./order.html">Order</a></li>
+                <li><a id="nav-about-button" href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <img src="./images/logo_cream-black.png" loading="lazy" height="80" alt="Bountiful Foods Logo image">
+
+        <h1>Bountiful Foods</h1>
+    </header>
+
+    <main class="about-main">
+
+        <section class="about-section1">
+            <h2>Our Roots</h2>
+            <p>
+                Bountiful Foods sprouted its roots in the heart of Carlsbad, California, with a vision to bring the
+                goodness of organic, locally grown foods to the coastal community. Founded with a passion for healthy
+                living and a commitment to supporting local farmers, our small business has grown to become a beacon of
+                freshness in the region.
+            </p>
+        </section>
+
+        <picture class="california-water">
+            <source class="california-water-img" srcset="./images/california-water_small.webp" media="(max-width: 650px)">
+            <source class="california-water-img" srcset="./images/california-water_med.webp" media="(max-width: 1000px)">
+            <img class="california-water-img" src="./images/california-water_large.webp" alt="california street view">
+        </picture>
+
+        <section class="about-section2">
+            <h2>From Local to Coastal</h2>
+            <p>
+                What started as a humble storefront in Carlsbad has blossomed into a widespread presence along the
+                coast, from the vibrant streets of Los Angeles to the sun-kissed beaches of San Diego. Our fleet of food
+                trucks roams the coastal areas, delivering the bounty of organic delights to locals and tourists alike.
+            </p>
+        </section>
+
+        <picture class="california-street">
+            <source class="california-street-img" srcset="./images/california-street_small.webp" media="(max-width: 650px)">
+            <source class="california-street-img" srcset="./images/california-street_med.webp" media="(max-width: 1000px)">
+            <img class="california-street-img" src="./images/california-street_large.webp" alt="california water view">
+        </picture>
+
+        <section class="about-section3">
+            <h2>Farm-to-Table Commitment</h2>
+            <p>
+                Bountiful Foods takes pride in sourcing fruits and produce directly from local farmers, ensuring a true
+                farm-to-table experience for our customers. While rooted in Carlsbad, we also collaborate with national
+                and international suppliers to offer a diverse range of fresh, high-quality ingredients that make our
+                menu a true celebration of organic bounty.
+            </p>
+        </section>
+
+    </main>
+
+    <section class="about-section4">
+        <h2>Join Us on the Journey</h2>
+        <p>
+            We invite you to join us on this flavorful journey. Whether you're a local resident seeking fresh produce or
+            a tourist craving a taste of coastal goodness, Bountiful Foods is here to serve you the best of organic,
+            locally grown delights.
+
+            <iframe loading="lazy" class="about-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.71876491947!2d-117.37020387907309!3d33.12163620950928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702327472786!5m2!1sen!2sus"
+                width="400" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+    </section>
+
+    <footer>
+
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/">
+                <img src="./images/instagram.png" loading="lazy" alt="instagram logo">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="./images/facebook.png" loading="lazy" alt="facebook logo">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img src="./images/twitter.png" loading="lazy" alt="twitter logo">
+            </a>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information:</h2>
+            <p>Email: contact@BountifulFoods.com</p>
+            <p>Phone: +1 123-456-7890</p>
+            <p>Street Address: 123 Main Street, City, Country</p>
+        </div>
+
+        <div class="last-modified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+
+        <a href="./resource.html" class="resources">Resources and Attributions (link)</a>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for Organic Food Company Home Page -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Organic Food Company - Providing Fresh and Healthy Organic Products">
+    <meta name="keywords" content="organic, food, farm-to-table, fresh, healthy, sustainable">
+    <meta name="author" content="Bountiful Foods">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Organic Food Company">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Providing Fresh and Healthy Organic Products">
+    <meta property="og:image" content="url-to-your-thumbnail-image.jpg">
+    <meta property="og:url" content="https://www.yourorganicfoodcompany.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Stylesheet Links-->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+    <!-- scripts -->
+    <script src="./scripts/hamburgerMenu.js" defer></script>
+    <!-- <script src="./scripts/weatherForecast.js" defer></script> -->
+    <script src="./scripts/lastModified.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+
+
+
+    <!-- Title of the Document -->
+    <title>Bountiful Foods</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!-- Navigation Bar -->
+        <nav class="navigation">
+            <button id="menu">≡</button>
+            <ul>
+                <li><a id="nav-home-button" href="./index.html">Home</a></li>
+                <li><a id="nav-order-button" href="./order.html">Order</a></li>
+                <li><a id="nav-about-button" href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <img src="./images/logo_cream-black.png" loading="lazy" height="80" alt="Bountiful Foods Logo image">
+
+        <h1>Bountiful Foods</h1>
+    </header>
+
+    <main class="confirmation-main">
+        <!-- Thank the user for their order -->
+        <h1 id="confirmationName"></h1>
+
+            <!-- Give the user an estimate for when they can pick up their drink. -->
+            <p class="confirmation-info">Your order will be ready for pickup in 20 min</p>
+            <!-- Give the user a way to contact you if there is a problem. -->
+            <p class="confirmation-info">For any issues, questions, or concerns Contact us at: 1 (800) 123 4321</p>
+
+            <!-- Include a call to action for the user to leave a review on social media. -->
+            <p class="confirmation-info">Tag us @BountifulFoods on facebook, instagram, or X for a chance to win discounts and prizes!</p>
+
+        <h2 id="confirmationName"></h2>
+
+        <h2 id="details-heading">Order Details:</h2>
+
+        <div class="confirmation-details">
+
+
+            <p id="confirmationFruits"></p>
+
+            <p id="confirmationEmail"></p>
+
+            <p id="confirmationPhone"></p>
+
+            <p id="confirmationInstructions"></p>
+
+            <h3>Nutrition Totals</h3>
+            <p id="totalCarbs"></p>
+            <p id="totalProtein"></p>
+            <p id="totalFat"></p>
+            <p id="totalSugar"></p>
+            <p id="totalCalories"></p>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/">
+                <img src="./images/instagram.png" loading="lazy" alt="instagram logo">
+            </a>
+            <a href="https://www.facebook.com/">
+                <img src="./images/facebook.png" loading="lazy" alt="facebook logo">
+            </a>
+            <a href="https://www.twitter.com/">
+                <img src="./images/twitter.png" loading="lazy" alt="twitter logo">
+            </a>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information:</h2>
+            <p>Email: contact@BountifulFoods.com</p>
+            <p>Phone: +1 123-456-7890</p>
+            <p>Street Address: 123 Main Street, City, Country</p>
+        </div>
+
+        <div class="last-modified">
+            <p>Last Modified: </p>
+            <span id="lastModified"></span>
+        </div>
+
+        <a href="./resource.html" class="resources">Resources and Attributions (link)</a>
+
+    </footer>
+</body>
+
+</html>

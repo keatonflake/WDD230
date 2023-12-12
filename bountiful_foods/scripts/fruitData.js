@@ -20,20 +20,7 @@
         xhr.send();
     }
 
-    // Function to handle form submission
-    function submitForm(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // You can add form validation logic here if needed
-
-        // Redirect to the Order Confirmation page
-        window.location.href = 'confirmation.html';
-    }
-
-    // Load fruit options when the page is ready
     document.addEventListener('DOMContentLoaded', function () {
         loadFruitOptions();
 
-        // Attach the submitForm function to the form submission event
-        document.getElementById('orderForm').addEventListener('submit', submitForm);
     });

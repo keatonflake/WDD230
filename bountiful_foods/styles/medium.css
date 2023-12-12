@@ -40,7 +40,7 @@
         list-style: none;
     }
 
-     /* specific */
+    /* specific */
     body {
         background-color: var(--blue);
     }
@@ -76,7 +76,6 @@
         grid-column: 4 /span 4;
         grid-row: 1/ span 1;
         width: 80%;
-        margin-left: 5vw;
     }
 
     .navigation ul {
@@ -100,7 +99,7 @@
         border-radius: 10px;
     }
 
-    .navigation ul li a{
+    .navigation ul li a {
         color: var(--black);
         font-family: var(--text);
         border: 2px solid var(--black);
@@ -127,6 +126,7 @@
         font-size: 25px;
         text-align: center;
     }
+
     /* #nav-about-button a{
         
     } */
@@ -218,22 +218,244 @@
         /* background-color: var(--aqua); */
         height: 90px;
     }
-    
-    .forecast{
+
+    .forecast {
         display: flex;
     }
-    
+
     .forecast h1 {
         width: 100%;
     }
 
-    .forecast div{
+    .forecast div {
         display: block;
         font-size: 20px;
         max-width: 150px;
     }
 
+    /* order form */
+
+    .order-body {
+        margin: 0;
+    }
+
+    .order-page-main {
+        display: grid;
+        margin-bottom: 1em;
+    }
+
+    .custom-text {
+        font-family: var(--display);
+        color: var(--cream);
+        border-radius: 10px;
+        width: 60%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .custom-text h1 {
+        font-size: 3rem;
+        margin-top: 1vh;
+        margin-bottom: 0;
+    }
+
+    .custom-text h2 {
+        font-size: 4em;
+        margin-top: 0;
+        margin-bottom: 1vh;
+    }
+
+    .order-page-main section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-div {
+        background-image: url('../images/fruit-pile.webp');
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #orderForm {
+        font-family: var(--text);
+        max-width: 70%;
+        text-align: left;
+        padding: 10px;
+        max-width: min-content;
+        background-color: rgba(255, 255, 255, 0.917);
+        color: var(--black);
+    }
+
+    #orderForm input {
+        border-radius: 15px;
+        border: 1px solid black;
+        margin-bottom: 15px;
+    }
+
+    #selectOption1 {
+        font-family: var(--text);
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+
+    #selectOption2 {
+        font-family: var(--text);
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+
+    #selectOption3 {
+        font-family: var(--text);
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+
+    #specialInstructions {
+        max-width: 300px;
+    }
+
+    #submit-order {
+        font-family: var(--display);
+        background-color: var(--orange);
+        border: 1px solid var(--black);
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    /* confirmation */
+
+    .confirmation-main {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: var(--text);
+    }
+
+    #confirmationName {
+        font-family: var(--display);
+        color: var(--cream);
+        border-bottom: 1px solid var(--black);
+    }
+
+    .confirmation-info {
+        color: var(--white);
+    }
+
+    #details-heading {
+        background-color: var(--orange);
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .confirmation-details {
+        background-color: rgba(255, 255, 255, 0.937);
+        padding: 10px;
+        border-top: 2px dotted var(--black);
+        margin-bottom: 1em;
+        color: var(--black);
+    }
+
+    .confirmation-details h3 {
+        border-top: 2px solid var(--black);
+        border-bottom: 2px solid var(--black);
+    }
+
+
+    .about-main{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-size: 20px;
+
+    }
+
+    .about-main section h2{
+        font-family: var(--display);
+        background-color: var(--orange);
+        color: var(--black);
+        padding: 5px;
+
+    }
+
+    .about-main .california-water{
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 1em;
+    }
+
+    .california-water-img{
+        max-width: 60%;
+    }
+
+    .about-main .california-street{
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 1em;
+    }
+
+    .california-street-img{
+        max-width: 60%;
+    }
+
+    .about-map{
+        margin-top: 1em;
+        margin-bottom: 2em;
+        width: 80%;
+    }
+
+    .about-section4{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .about-section4 h2{
+        font-family: var(--display);
+        background-color: var(--orange);
+        color: var(--black);
+        padding: 5px;
+    }
+
+    .resource-main{
+        text-align: center;
+        background-color: var(--white);
+        max-width: 80%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+
+    .resource-links{
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.858);
+        height: 70vh;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .resource-links a{
+        padding: 15px;
+        font-family: var(--text);
+        color: var(--black);
+    }
+
+    .resource-links h1{
+        font-family: var(--display);
+    }
+
+
     footer {
+        margin-top: 1em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
@@ -241,9 +463,8 @@
         justify-items: center;
         font-family: var(--text);
         color: var(--white);
-        border: 2px solid var(--cream);
+        border-top: 2px solid var(--cream);
         padding: 10px;
-        border-radius: 15px;
         padding-bottom: 15px;
     }
 
@@ -252,7 +473,7 @@
         display: block;
     }
 
-    .social-media-links img{
+    .social-media-links img {
         width: 40px;
         padding: 10px;
     }

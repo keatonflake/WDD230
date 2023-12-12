@@ -38,7 +38,7 @@
     <title>Bountiful Foods</title>
 </head>
 
-<body>
+<body class="order-body">
 
     <header class="header">
         <!-- Navigation Bar -->
@@ -55,10 +55,15 @@
         <h1>Bountiful Foods</h1>
     </header>
 
+        <div class="custom-text">
+            <h1>Let's make it custom</h1>
+            <h2>= extra yum!</h2>
+        </div>
+
     <main class="order-page-main">
-        <section>
+        <section class="background-div">
 <!-- Form Start -->
-            <form id="orderForm">
+            <form id="orderForm" action="confirmation.html" method="get">
                 <!-- First Name -->
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
@@ -79,17 +84,23 @@
 
                 <!-- Select Inputs -->
                 <label for="selectOption1">Select Fruit for Drink 1:</label>
-                <select id="selectOption1" name="selectOption1" required></select>
+                <select id="selectOption1" name="selectOption1" required>
+                    <option value="select"> Select</option>
+                </select>
 
                 <br>
 
                 <label for="selectOption2">Select Fruit for Drink 2:</label>
-                <select id="selectOption2" name="selectOption2" required></select>
+                <select id="selectOption2" name="selectOption2" required>
+                    <option value="select"> Select</option>
+                </select>
 
                 <br>
 
                 <label for="selectOption3">Select Fruit for Drink 3:</label>
-                <select id="selectOption3" name="selectOption3" required></select>
+                <select id="selectOption3" name="selectOption3" required>
+                    <option value="select"> Select</option>
+                </select>
 
                 <br><br>
 
@@ -103,7 +114,8 @@
                 <p>Payment is received when the drink is picked up.</p>
 
                 <!-- Submit Button -->
-                <input type="submit" value="Order Deliciousness">
+                <!-- <input type="submit" value="Order Deliciousness"> -->
+                <button id="submit-order">Order Deliciousness!</button>
             </form>
 
         </section>
