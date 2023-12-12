@@ -167,6 +167,32 @@
         border: 2px solid var(--black);
     }
 
+    .specialty-drinks-home{
+        color: var(--black);
+    }
+
+    #specialty-heading{
+       color: var(--black);
+       border-bottom: 1px solid var(--black);
+       border-radius: 0;
+    }
+
+    .specialty-drink-background{
+        background-image: url('../images/oranges-banner.webp');
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .specialty-drinks-container{
+        background-color: rgba(255, 255, 255, 0.842);
+        border-radius: 10px;
+        padding-bottom: 10px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
     /* End of Hero */
 
     .summary h1 {
