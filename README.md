@@ -25,9 +25,7 @@ Bountiful Foods leverages a variety of skills and tools to create a dynamic and 
 ### Tools
 - **Weather API**: Integrated a weather API to fetch and display current weather conditions, adding contextual relevance to the user interface.
 - **JSON**: Used JSON format to store and manage ingredient data, which was then parsed and utilized within the application.
-- **Node.js & npm**: Employed Node.js and npm for managing dependencies and running the development server.
 - **Git & GitHub**: Utilized Git for version control and GitHub for repository hosting, enabling collaboration and code management.
-- **Visual Studio Code**: Used Visual Studio Code as the primary code editor for development, benefiting from its powerful features and extensions.
 
 ### Project Context
 This project was created based on requirements from a fictitious customer, aiming to simulate a real-world scenario. The goal was to develop a web application for a local drink shop that uses fresh ingredients, providing users with an interactive and informative experience.
